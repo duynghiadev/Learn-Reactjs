@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const name = 'Nghia';
   const age = '21';
-  const isFemale = true;
+  const isMale = true;
   const student = {
     name: 'VKU',
   };
@@ -17,6 +17,13 @@ function App() {
         <p>
           Xin chao {name}-{age}
         </p>
+
+        {isMale ? 'Male' : 'Female'}
+
+        {isMale && <p>OK</p>}
+        {!isMale && <p>NOT OK</p>}
+
+        <p>{student.name}</p>
 
         <ul>
           {colorList.map((color) => (
