@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function TodoFeature(props) {
-  return <div>TodoFeature</div>;
+function TodoPage(props) {
+  return <div>TodoPage</div>;
 }
 
-TodoFeature.propTypes = {};
+TodoPage.propTypes = {};
 
-export default TodoFeature;
+export default TodoPage;
