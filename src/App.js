@@ -1,5 +1,6 @@
 import Countdown from 'components life cycle/willunmount';
 import ChangeColor from 'components/ChangeColor';
+import ChangeForm from 'components/ChangeForm';
 import ChangeList from 'components/ChangeList';
 import ColorBox from 'components/ColorBox';
 import Counter from 'components/Counter';
@@ -26,9 +27,22 @@ function App() {
     setTodoList(newTodoList);
   }
 
+  function handleTodoFormSubmit(formValues) {
+    console.log('Form Submit: ', formValues);
+    // Add new todo to current todo list
+    const newTodo = {
+      id: todoList.length + 1,
+      ...formValues,
+    };
+    const newTodoList = [...todoList];
+    newTodoList.push(newTodo);
+    setTodoList(newTodoList);
+  }
+
   return (
     <div className="app">
-      {/* This is content for theChange Color */}
+      {/* This is content for the Change Color and Change Form */}
+      <ChangeForm onSubmit={handleTodoFormSubmit} />
       <ChangeList todos={todoList} onTodoClick={handleTodoClick} />
 
       {/* <ChangeColor /> */}
