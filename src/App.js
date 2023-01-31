@@ -1,4 +1,5 @@
 import Countdown from 'components life cycle/willunmount';
+import ChangeColor from 'components/ChangeColor';
 import ColorBox from 'components/ColorBox';
 import Counter from 'components/Counter';
 import AlbumFeature from 'features/Album';
@@ -9,9 +10,10 @@ import DailyList from 'react hook/example2';
 
 function App() {
   return (
-    <div className="App">
-      <BoxClick />
-      <DailyList />
+    <div className="app">
+      <ChangeColor />
+      {/* <BoxClick /> */}
+      {/* <DailyList /> */}
       {/* <TodoFeature /> */}
       {/* <Countdown /> */}
       {/* <AlbumFeature /> */}
