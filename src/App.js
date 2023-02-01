@@ -14,6 +14,7 @@ import queryString from 'query-string';
 import BoxClick from 'react hook/example1';
 import DailyList from 'react hook/example2';
 import PostFiltersForm from 'components/PostFiltersForm';
+import Clock from 'components/Clock';
 
 function App() {
   const [todoList, setTodoList] = useState([
@@ -99,6 +100,8 @@ function App() {
     });
   }
 
+  const [showClock, setShowClock] = useState(true);
+
   return (
     <div className="app">
       {/* This is content for the Change Color and Change Form */}
@@ -110,6 +113,9 @@ function App() {
 
       <PostList posts={postList} />
       <Pagination pagination={pagination} onPageChange={handlePageChange} />
+
+      {showClock && <Clock />}
+      <button onClick={() => setShowClock(false)}>Hide clock</button>
 
       {/* <ChangeColor /> */}
       {/* <BoxClick /> */}
