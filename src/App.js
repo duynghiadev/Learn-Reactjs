@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import queryString from 'query-string';
 import BoxClick from 'react hook/example1';
 import DailyList from 'react hook/example2';
+import PostFiltersForm from 'components/PostFiltersForm';
 
 function App() {
   const [todoList, setTodoList] = useState([
@@ -83,9 +84,19 @@ function App() {
       id: todoList.length + 1,
       ...formValues,
     };
+
     const newTodoList = [...todoList];
     newTodoList.push(newTodo);
     setTodoList(newTodoList);
+  }
+
+  function handleFiltersChange(newFilters) {
+    console.log('New Filter: ', newFilters);
+    setFilters({
+      ...filters,
+      _page: 1,
+      title_like: newFilters.searchTerm,
+    });
   }
 
   return (
@@ -93,6 +104,10 @@ function App() {
       {/* This is content for the Change Color and Change Form */}
       <ChangeForm onSubmit={handleTodoFormSubmit} />
       <ChangeList todos={todoList} onTodoClick={handleTodoClick} />
+
+      <h4>Search Term:</h4>
+      <PostFiltersForm onSubmit={handleFiltersChange} />
+
       <PostList posts={postList} />
       <Pagination pagination={pagination} onPageChange={handlePageChange} />
 
