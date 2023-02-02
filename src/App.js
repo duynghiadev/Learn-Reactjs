@@ -15,6 +15,7 @@ import BoxClick from 'react hook/example1';
 import DailyList from 'react hook/example2';
 import PostFiltersForm from 'components/PostFiltersForm';
 import Clock from 'components/Clock';
+import BetterClock from 'components/BetterClock';
 
 function App() {
   const [todoList, setTodoList] = useState([
@@ -108,14 +109,17 @@ function App() {
       <ChangeForm onSubmit={handleTodoFormSubmit} />
       <ChangeList todos={todoList} onTodoClick={handleTodoClick} />
 
-      <h4>Search Term:</h4>
+      <h4>---Search Term---</h4>
       <PostFiltersForm onSubmit={handleFiltersChange} />
 
       <PostList posts={postList} />
       <Pagination pagination={pagination} onPageChange={handlePageChange} />
 
+      <h4>---Clock---</h4>
       {showClock && <Clock />}
+      <BetterClock />
       <button onClick={() => setShowClock(false)}>Hide clock</button>
+      <button onClick={() => setShowClock(true)}>Show clock</button>
 
       {/* <ChangeColor /> */}
       {/* <BoxClick /> */}
