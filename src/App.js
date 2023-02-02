@@ -16,6 +16,7 @@ import DailyList from 'react hook/example2';
 import PostFiltersForm from 'components/PostFiltersForm';
 import Clock from 'components/Clock';
 import BetterClock from 'components/BetterClock';
+import MagicBox from 'components/MagicBox';
 
 function App() {
   const [todoList, setTodoList] = useState([
@@ -120,6 +121,8 @@ function App() {
       <BetterClock />
       <button onClick={() => setShowClock(false)}>Hide clock</button>
       <button onClick={() => setShowClock(true)}>Show clock</button>
+
+      <MagicBox />
 
       {/* <ChangeColor /> */}
       {/* <BoxClick /> */}
