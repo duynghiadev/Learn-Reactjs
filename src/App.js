@@ -1,6 +1,6 @@
 import React from 'react';
 import HomePage from 'pages/HomePage';
-import { Link, NavLink, Route } from 'react-router-dom';
+import { Link, NavLink, Route, Switch } from 'react-router-dom';
 import TodoFeature from 'features/Todo';
 import AlbumFeature from 'features/Album';
 
@@ -9,12 +9,6 @@ function App() {
     <div className="app">
       {/* <HomePage /> */}
       Header
-      <p>
-        <Link to="/todos">Todos</Link>
-      </p>
-      <p>
-        <Link to="/albums">Albums</Link>
-      </p>
       <p>
         <NavLink to="/todos" activeClassName="active-todo">
           Todos
@@ -25,8 +19,10 @@ function App() {
           Albums
         </NavLink>
       </p>
-      <Route path="/todos" component={TodoFeature} />
-      <Route path="/albums" component={AlbumFeature} />
+      <Switch>
+        <Route path="/todos" component={TodoFeature} />
+        <Route path="/albums" component={AlbumFeature} />
+      </Switch>
       Footer
     </div>
   );
