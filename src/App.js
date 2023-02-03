@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Hero from 'components/Hero';
 import HomePage from 'pages/HomePage';
+import Counter from 'components/Counter';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
       <Hero name="Duy Nghia" onClick={handleHeroClick} />
 
       {/* <HomePage /> */}
+      <Counter />
     </div>
   );
 }
