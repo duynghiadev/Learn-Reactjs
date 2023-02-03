@@ -106,7 +106,7 @@ function HomePage() {
   const [showClock, setShowClock] = useState(true);
 
   return (
-    <div className="app">
+    <div className="app-homepage">
       {/* This is content for the Change Color and Change Form */}
       <ChangeForm onSubmit={handleTodoFormSubmit} />
       <ChangeList todos={todoList} onTodoClick={handleTodoClick} />
@@ -125,14 +125,14 @@ function HomePage() {
 
       <MagicBox />
 
-      {/* <ChangeColor /> */}
-      {/* <BoxClick /> */}
-      {/* <DailyList /> */}
-      {/* <TodoFeature /> */}
-      {/* <Countdown /> */}
-      {/* <AlbumFeature /> */}
-      {/* <ColorBox />
-      <Counter /> */}
+      <ChangeColor />
+      <BoxClick />
+      <DailyList />
+      <TodoFeature />
+      <Countdown />
+      <AlbumFeature />
+      <ColorBox />
+      <Counter />
     </div>
   );
 }

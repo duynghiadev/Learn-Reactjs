@@ -1,26 +1,16 @@
-import React, { useState } from 'react';
-import './App.css';
-import Hero from 'components/Hero';
+import React from 'react';
 import HomePage from 'pages/HomePage';
-import Counter from 'components/Counter';
+import { Route } from 'react-router-dom';
+import TodoFeature from 'features/Todo';
+import AlbumFeature from 'features/Album';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  // next video: useCallback vs useMemo
-  const handleHeroClick = () => {};
-
   return (
     <div className="app">
-      <h1>React Hooks - Clock</h1>
-
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Increase</button>
-
-      <Hero name="Duy Nghia" onClick={handleHeroClick} />
-
       {/* <HomePage /> */}
-      <Counter />
+      To do feature
+      <Route path="/todos" component={TodoFeature} />
+      <Route path="/albums" component={AlbumFeature} />
     </div>
   );
 }
