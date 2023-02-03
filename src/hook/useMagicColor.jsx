@@ -22,7 +22,6 @@ function useMagicColor() {
   // Change color every 1 second
   useEffect(() => {
     const colorInterval = setInterval(() => {
-      console.log('First color: ', color);
       console.log('Change color: ', colorRef.current);
 
       const newColor = randomColor(colorRef.current);
@@ -35,7 +34,7 @@ function useMagicColor() {
     return () => {
       clearInterval(colorInterval);
     };
-  }, [color]);
+  }, []);
 
   return color;
 }
