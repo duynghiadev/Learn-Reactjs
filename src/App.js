@@ -5,6 +5,8 @@ import TodoFeature from 'features/Todo';
 import AlbumFeature from 'features/Album';
 import NotFound from 'components/Not Found';
 import productApi from 'api/productApi';
+import ColorBox1 from 'learn reactjs easy/react props state/ColorBox';
+import Countdown1 from 'learn reactjs easy/react props state/Countdown';
 
 function App() {
   useEffect(() => {
@@ -21,6 +23,9 @@ function App() {
   return (
     <div className="app">
       {/* <HomePage /> */}
+      {/* <Countdown1 seconds={30} />
+      <ColorBox1 color="deeppink" />
+      <ColorBox1 color="green" /> */}
       Header
       <p>
         <NavLink to="/todos" activeClassName="active-todo">
