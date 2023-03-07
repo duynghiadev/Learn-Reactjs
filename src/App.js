@@ -9,6 +9,15 @@ import ColorBox1 from 'learn reactjs easy/react props state/ColorBox';
 import Countdown1 from 'learn reactjs easy/react props state/Countdown';
 import CounterFeature from 'features/Counter';
 import './App.css';
+import styled from 'styled-components';
+
+// CSS in JS
+const Title = styled.h1`
+  text-align: center;
+  font-weight: bold;
+
+  color: ${(props) => props.color || 'green'};
+`;
 
 function App() {
   useEffect(() => {
@@ -28,7 +37,7 @@ function App() {
       {/* <Countdown1 seconds={30} />
       <ColorBox1 color="deeppink" />
       <ColorBox1 color="green" /> */}
-      Header
+      <Title color="goldenrod">Heading</Title>
       <p>
         <NavLink to="/todos" activeClassName="active-todo">
           Todos
