@@ -8,6 +8,7 @@ import productApi from 'api/productApi';
 import ColorBox1 from 'learn reactjs easy/react props state/ColorBox';
 import Countdown1 from 'learn reactjs easy/react props state/Countdown';
 import CounterFeature from 'features/Counter';
+import './App.css';
 
 function App() {
   useEffect(() => {
@@ -21,11 +22,8 @@ function App() {
     fetchProducts();
   }, []);
 
-  const color = 'goldenrod';
-  const backgroundUrl = 'https://picsum.photos/seed/picsum/536/354';
-
   return (
-    <div className="app" style={{ color: color, backgroundImage: `url("${backgroundUrl}")` }}>
+    <div className="app">
       {/* <HomePage /> */}
       {/* <Countdown1 seconds={30} />
       <ColorBox1 color="deeppink" />
