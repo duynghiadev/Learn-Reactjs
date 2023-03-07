@@ -7,6 +7,7 @@ import NotFound from 'components/Not Found';
 import productApi from 'api/productApi';
 import ColorBox1 from 'learn reactjs easy/react props state/ColorBox';
 import Countdown1 from 'learn reactjs easy/react props state/Countdown';
+import CounterFeature from 'features/Counter';
 
 function App() {
   useEffect(() => {
@@ -40,13 +41,12 @@ function App() {
       <Switch>
         <Redirect from="/home" to="/" exact></Redirect>
         <Redirect from="/post-list/:postId" to="/posts/:postId" exact></Redirect>
-        <Route path="/" component={TodoFeature} exact />
+        <Route path="/" component={CounterFeature} exact />
         <Route path="/todos" component={TodoFeature} />
         <Route path="/albums" component={AlbumFeature} />
 
         <Route component={NotFound} />
       </Switch>
-      Footer
     </div>
   );
 }
