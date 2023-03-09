@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import CodeIcon from '@material-ui/icons/Code';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+  },
+  link: {
+    color: '#fff',
+    textDecoration: 'none',
   },
 }));
 
@@ -31,11 +35,17 @@ export default function Header() {
           <CodeIcon className={classes.menuButton} />
 
           <Typography variant="h6" className={classes.title}>
-            EZ Shop
+            <Link className={classes.link} to="/">
+              EZ Shop
+            </Link>
           </Typography>
 
-          <Button color="inherit">Todos</Button>
-          <Button color="inherit">Albums</Button>
+          <NavLink className={classes.link} to="/todos">
+            <Button color="inherit">Todos</Button>
+          </NavLink>
+          <NavLink className={classes.link} to="/albums">
+            <Button color="inherit">Albums</Button>
+          </NavLink>
 
           <Button color="inherit">Register</Button>
         </Toolbar>
