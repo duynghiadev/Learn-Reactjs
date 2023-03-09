@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import RegisterForm from '../RegisterForm';
 import { useDispatch } from 'react-redux';
 import { register } from 'features/Auth/userSlice';
