@@ -1,4 +1,3 @@
-// Xử lý relative import với jsconfig.json
 {
   "compilerOptions": {
     "module": "es6",

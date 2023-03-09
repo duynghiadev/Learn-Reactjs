@@ -10,14 +10,7 @@ import Countdown1 from 'learn reactjs easy/react props state/Countdown';
 import CounterFeature from 'features/Counter';
 import './App.css';
 import styled from 'styled-components';
-
-// CSS in JS
-const Title = styled.h1`
-  text-align: center;
-  font-weight: bold;
-
-  color: ${(props) => props.color || 'green'};
-`;
+import Header from 'components/Header';
 
 function App() {
   useEffect(() => {
@@ -37,17 +30,9 @@ function App() {
       {/* <Countdown1 seconds={30} />
       <ColorBox1 color="deeppink" />
       <ColorBox1 color="green" /> */}
-      <Title color="goldenrod">Heading</Title>
-      <p>
-        <NavLink to="/todos" activeClassName="active-todo">
-          Todos
-        </NavLink>
-      </p>
-      <p>
-        <NavLink to="/albums" activeClassName="active-albums">
-          Albums
-        </NavLink>
-      </p>
+
+      <Header />
+
       <Switch>
         <Redirect from="/home" to="/" exact></Redirect>
         <Redirect from="/post-list/:postId" to="/posts/:postId" exact></Redirect>
