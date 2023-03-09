@@ -1,5 +1,6 @@
 import store from 'app/store';
 import React from 'react';
+import { SnackbarProvider } from 'notistack';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -11,7 +12,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <App />
+        <SnackbarProvider anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
+          <App />
+        </SnackbarProvider>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
