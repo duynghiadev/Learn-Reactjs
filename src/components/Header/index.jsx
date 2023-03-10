@@ -10,7 +10,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import Register from 'features/Auth/components/Register';
-import { Box, IconButton } from '@material-ui/core';
+import { Box, IconButton, Menu, MenuItem } from '@material-ui/core';
 import { AccountCircle, Close } from '@material-ui/icons';
 import Login from 'features/Auth/components/Login';
 import { useSelector } from 'react-redux';
@@ -52,6 +52,7 @@ export default function Header() {
   const isLoggedIn = !!loggedInUser.id;
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState(MODE.LOGIN);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -59,6 +60,14 @@ export default function Header() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleUserClick = (e) => {
+    setAnchorEl(e.currentTarget);
+  };
+
+  const handleCloseMenu = () => {
+    setAnchorEl(null);
   };
 
   const classes = useStyles();
@@ -89,12 +98,31 @@ export default function Header() {
           )}
 
           {isLoggedIn && (
-            <IconButton color="inherit">
+            <IconButton color="inherit" onClick={handleUserClick}>
               <AccountCircle />
             </IconButton>
           )}
         </Toolbar>
       </AppBar>
+
+      <Menu
+        keepMounted
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={handleCloseMenu}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        getContentAnchorEl={null}
+      >
+        <MenuItem onClick={handleCloseMenu}>My account</MenuItem>
+        <MenuItem onClick={handleCloseMenu}>Logout</MenuItem>
+      </Menu>
 
       <Dialog
         disableBackdropClick
