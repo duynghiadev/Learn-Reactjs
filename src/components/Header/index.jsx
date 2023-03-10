@@ -11,8 +11,9 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import Register from 'features/Auth/components/Register';
 import { Box, IconButton } from '@material-ui/core';
-import { Close } from '@material-ui/icons';
+import { AccountCircle, Close } from '@material-ui/icons';
 import Login from 'features/Auth/components/Login';
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,6 +48,8 @@ const MODE = {
 };
 
 export default function Header() {
+  const loggedInUser = useSelector((state) => state.user.current);
+  const isLoggedIn = !!loggedInUser.id;
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState(MODE.LOGIN);
 
@@ -79,9 +82,17 @@ export default function Header() {
             <Button color="inherit">Albums</Button>
           </NavLink>
 
-          <Button color="inherit" onClick={handleClickOpen}>
-            Register
-          </Button>
+          {!isLoggedIn && (
+            <Button color="inherit" onClick={handleClickOpen}>
+              Login
+            </Button>
+          )}
+
+          {isLoggedIn && (
+            <IconButton color="inherit">
+              <AccountCircle />
+            </IconButton>
+          )}
         </Toolbar>
       </AppBar>
 
