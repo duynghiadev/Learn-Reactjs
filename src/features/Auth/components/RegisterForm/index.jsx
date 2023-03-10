@@ -106,6 +106,7 @@ function RegisterForm(props) {
           variant="contained"
           color="primary"
           fullWidth
+          size="large"
         >
           Create an account
         </Button>
