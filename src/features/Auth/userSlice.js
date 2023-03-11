@@ -33,7 +33,7 @@ const userSlice = createSlice({
     settings: {},
   },
   reducers: {
-    logout(state) {
+    logout(state, action) {
       // clear local storage
       localStorage.removeItem(StorageKeys.USER);
       localStorage.removeItem(StorageKeys.TOKEN);

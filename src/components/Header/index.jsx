@@ -50,8 +50,10 @@ const MODE = {
 
 export default function Header() {
   const dispatch = useDispatch();
+
   const loggedInUser = useSelector((state) => state.user.current);
   const isLoggedIn = !!loggedInUser.id;
+
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState(MODE.LOGIN);
   const [anchorEl, setAnchorEl] = useState(null);
