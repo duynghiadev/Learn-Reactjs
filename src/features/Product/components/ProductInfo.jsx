@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 
   priceBox: {
     padding: theme.spacing(2),
-    backgroundColor: theme.palette.grey[200],
+    backgroundColor: theme.palette.grey[100],
   },
 
   salePrice: {
