@@ -18,7 +18,7 @@ src
 |__ App.js
 ```
 
-FiltersViewer
+### FiltersViewer
 
 ```js
 const filters = {
@@ -28,7 +28,7 @@ const filters = {
 };
 ```
 
-FILTER_LIST
+### FILTER_LIST
 
 - id: number
 - getLabel: (filters) => string
@@ -44,22 +44,25 @@ DetailPage handleSubmit
 |  |__ QuantityField
 ```
 
+```
 /products/:productId --> ProductDescription
 /products/:productId/additional --> ProductAdditional
 /products/:productId/reviews --> ProductReviews
+```
 
-DetailPage
-Click Chọn Mua
-Open Mini Cart
-Go to Cart Page
+- DetailPage
+- Click Chọn Mua
+- Open Mini Cart
+- Go to Cart Page
 
-Cart
+### Cart
 
 - showMiniCart: true / false
 - cartItems -> item (product, quantity)
 
-State tính toán phụ thuộc vào state có sẵn
+### State tính toán phụ thuộc vào state có sẵn
 
 - cartItemsCount
 - cartTotal
-  --> createSelector()
+
+`--> createSelector()`
