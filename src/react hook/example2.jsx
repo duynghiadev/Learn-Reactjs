@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
 function DailyList(props) {
   const [todoList, setTodoList] = useState(['love', 'easy', 'frontend']);
@@ -22,7 +21,5 @@ function DailyList(props) {
     </ul>
   );
 }
-
-DailyList.propTypes = {};
 
 export default DailyList;

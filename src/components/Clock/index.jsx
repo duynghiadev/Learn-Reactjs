@@ -1,8 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import useClock from 'hook/useClock';
-
-Clock.propTypes = {};
 
 function Clock(props) {
   const { timeString } = useClock();
