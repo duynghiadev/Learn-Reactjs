@@ -12,6 +12,7 @@ import './App.css';
 import styled from 'styled-components';
 import Header from 'components/Header';
 import ProductFeature from 'features/Product';
+import CartFeature from 'features/Cart';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/todos" component={TodoFeature} />
         <Route path="/albums" component={AlbumFeature} />
         <Route path="/products" component={ProductFeature} />
+        <Route path="/cart" component={CartFeature} />
 
         <Route component={NotFound} />
       </Switch>
