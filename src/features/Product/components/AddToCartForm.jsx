@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import InputField from 'components/form-controls/InputField';
 import { Button } from '@material-ui/core';
 import QuantityField from 'components/form-controls/QuantityField';
 
