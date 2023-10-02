@@ -10,15 +10,15 @@ function BoxClick(props) {
     setColor('green');
   }
 
-  return (
-    <div
-      className="color-box"
-      style={{ backgroundColor: color, width: '50%', height: '50%', margin: '0px' }}
-      onClick={handleBoxClick}
-    >
-      Hello
-    </div>
-  );
+  return (<div
+    className='color-box'
+    style={{
+      backgroundColor: color, width: '50%', height: '50%', margin: '0px',
+    }}
+    onClick={handleBoxClick}
+  >
+    Hello
+  </div>);
 }
 
 BoxClick.propTypes = {};
