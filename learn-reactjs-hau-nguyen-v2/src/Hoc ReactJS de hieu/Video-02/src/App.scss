@@ -1,0 +1,15 @@
+.App {
+  .App-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #282c34;
+    color: white;
+    flex-direction: column;
+
+    & > * {
+      margin-right: 1rem;
+    }
+  }
+}
