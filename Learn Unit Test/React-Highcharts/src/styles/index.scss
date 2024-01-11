@@ -1,0 +1,20 @@
+.app {
+  body {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  }
+
+  p {
+    text-indent: 20px;
+    text-align: justify;
+  }
+
+  @import 'header';
+  @import 'footer';
+  @import 'content';
+  @import 'not-found';
+  @import 'tooltip';
+}
