@@ -1,0 +1,362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddTrip /> should render component 1`] = `
+<div
+  className="add-review-container limited-width"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <h2
+      className="title"
+    >
+      Add a story
+    </h2>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Title:
+      </span>
+      <input
+        className="form-input "
+        name="title"
+        onChange={[Function]}
+        placeholder="Enter title"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Trip to:
+      </span>
+      <CountrySelector
+        defaultCountry="Spain"
+        getSelectedCountry={[Function]}
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Description:
+      </span>
+      <Editor
+        editorClassName="editor-self"
+        editorState={Object {}}
+        onEditorStateChange={[Function]}
+        toolbar={Object {}}
+        wrapperClassName="editor-wrapper "
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Duration (days):
+      </span>
+      <input
+        className="form-input "
+        name="duration"
+        onChange={[Function]}
+        placeholder="Enter duration"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Expenses ($):
+      </span>
+      <input
+        className="form-input "
+        name="expences"
+        onChange={[Function]}
+        placeholder="Enter expenses"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <StarsRating
+        error=""
+        onChange={[Function]}
+        rating={0}
+      />
+    </div>
+    <button
+      className="add-button"
+      disabled={false}
+      type="submit"
+    >
+      Add story
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<AddTrip /> should render component with newTrip and errors 1`] = `
+<div
+  className="add-review-container limited-width"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <h2
+      className="title"
+    >
+      Add a story
+    </h2>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Title:
+      </span>
+      <input
+        className="form-input field-error"
+        name="title"
+        onChange={[Function]}
+        placeholder="Enter title"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="error"
+    >
+      title error
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Trip to:
+      </span>
+      <CountrySelector
+        defaultCountry="Spain"
+        getSelectedCountry={[Function]}
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Description:
+      </span>
+      <Editor
+        editorClassName="editor-self"
+        editorState={Object {}}
+        onEditorStateChange={[Function]}
+        toolbar={Object {}}
+        wrapperClassName="editor-wrapper field-error"
+      />
+    </div>
+    <div
+      className="error"
+    >
+      description error
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Duration (days):
+      </span>
+      <input
+        className="form-input field-error"
+        name="duration"
+        onChange={[Function]}
+        placeholder="Enter duration"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="error"
+    >
+      duration error
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Expenses ($):
+      </span>
+      <input
+        className="form-input field-error"
+        name="expences"
+        onChange={[Function]}
+        placeholder="Enter expenses"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="error"
+    >
+      expences error
+    </div>
+    <div
+      className="form_element"
+    >
+      <StarsRating
+        error="field-error"
+        onChange={[Function]}
+        rating={0}
+      />
+    </div>
+    <div
+      className="error"
+    >
+      rating error
+    </div>
+    <button
+      className="add-button"
+      disabled={false}
+      type="submit"
+    >
+      Add story
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<AddTrip /> should render component with newTrip and success true 1`] = `
+<div
+  className="add-review-container limited-width"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <h2
+      className="title"
+    >
+      Add a story
+    </h2>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Title:
+      </span>
+      <input
+        className="form-input "
+        name="title"
+        onChange={[Function]}
+        placeholder="Enter title"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Trip to:
+      </span>
+      <CountrySelector
+        defaultCountry="Spain"
+        getSelectedCountry={[Function]}
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Description:
+      </span>
+      <Editor
+        editorClassName="editor-self"
+        editorState={Object {}}
+        onEditorStateChange={[Function]}
+        toolbar={Object {}}
+        wrapperClassName="editor-wrapper "
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Duration (days):
+      </span>
+      <input
+        className="form-input "
+        name="duration"
+        onChange={[Function]}
+        placeholder="Enter duration"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <span
+        className="label"
+      >
+        Expenses ($):
+      </span>
+      <input
+        className="form-input "
+        name="expences"
+        onChange={[Function]}
+        placeholder="Enter expenses"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="form_element"
+    >
+      <StarsRating
+        error=""
+        onChange={[Function]}
+        rating={0}
+      />
+    </div>
+    <button
+      className="add-button"
+      disabled={false}
+      type="submit"
+    >
+      Add story
+    </button>
+  </form>
+</div>
+`;

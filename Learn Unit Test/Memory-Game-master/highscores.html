@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Game | Highscores</title>
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/radioBtns.css">
+	<link rel="stylesheet" type="text/css" href="css/button-highscores.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome-all.css">
+	<script src="javascript/memory-logic.js"></script>
+</head>
+<body>
+
+<div class="title">
+	<h1>Highscores</h1>
+	<br><br>
+</div>
+
+<div id="timer" style="display: none;">
+	<label id="hours" class="timer_label">00</label>:<label id="minutes" class="timer_label">00</label>:<label id="seconds" class="timer_label">00</label>
+</div>
+
+<div class="options-highstores">
+	<br>
+	<div id="difficultySelector">
+		<h3>Choose the mode you want to see the results for:</h3>
+		<form class="radioBtnsContainer-highstores" action="">
+			<div>
+				<input type="radio" name="difficulty" id="difficulty1" class="radio" value="12"/>
+				<label for="difficulty1">12 elements</label>
+			</div>
+			<div>
+				<input type="radio" name="difficulty" id="difficulty2" class="radio" value="18"/>
+				<label for="difficulty2">18 elements</label>
+			</div>
+			<div>
+				<input type="radio" name="difficulty" id="difficulty3" class="radio" value="24" checked/>
+				<label for="difficulty3">24 elements</label>
+			</div>
+			<div>
+				<input type="radio" name="difficulty" id="difficulty4" class="radio" value="30"/>
+				<label for="difficulty4">30 elements</label>
+			</div>
+		</form>
+	</div>
+	<div id="modeSelector">
+		<form class="radioBtnsContainer-highstores" action="">
+			<div>
+				<input type="radio" name="mode" id="mode1" class="radio" value="numbers"/>
+				<label for="mode1">Numbers</label>
+			</div>
+			<div>
+				<input type="radio" name="mode" id="mode2" class="radio" value="characters"/>
+				<label for="mode2">Characters</label>
+			</div>
+			<div>
+				<input type="radio" name="mode" id="mode3" class="radio" value="colors"/>
+				<label for="mode3">Colors</label>
+			</div>
+			<div>
+				<input type="radio" name="mode" id="mode4" class="radio" value="pictures" checked/>
+				<label for="mode4">Pictures</label>
+			</div>
+		</form>
+	</div>
+	<br>
+	<div id="highscores-data"></div>
+	<a type="button" class="btn-highscores" href="index.html"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+</div>
+
+<script src="javascript/highscores.js"></script>
+</body>
+</html>

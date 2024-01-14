@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Register /> should render component 1`] = `
+<div
+  className="register-container"
+>
+  <div
+    className="form-container"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <h2
+        className="form-title"
+      >
+        Sing Up
+      </h2>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="name"
+          onChange={[Function]}
+          placeholder="Enter name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="lastname"
+          onChange={[Function]}
+          placeholder="Enter Lastname"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="email"
+          onChange={[Function]}
+          placeholder="Enter Email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="password"
+          onChange={[Function]}
+          placeholder="Enter Password"
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        type="submit"
+      >
+        Sign Up
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`<Register /> should render component with errors 1`] = `
+<div
+  className="register-container"
+>
+  <div
+    className="form-container"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <h2
+        className="form-title"
+      >
+        Sing Up
+      </h2>
+      <div
+        className="form_element"
+      >
+        <input
+          className="field-error"
+          name="name"
+          onChange={[Function]}
+          placeholder="Enter name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="error"
+      >
+        Test name
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className="field-error"
+          name="lastname"
+          onChange={[Function]}
+          placeholder="Enter Lastname"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="error"
+      >
+        Test lastname
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className="field-error"
+          name="email"
+          onChange={[Function]}
+          placeholder="Enter Email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="error"
+      >
+        Test email
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className="field-error"
+          name="password"
+          onChange={[Function]}
+          placeholder="Enter Password"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        className="error"
+      >
+        Test password
+      </div>
+      <button
+        type="submit"
+      >
+        Sign Up
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`<Register /> should render component with users 1`] = `
+<div
+  className="register-container"
+>
+  <div
+    className="form-container"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <h2
+        className="form-title"
+      >
+        Sing Up
+      </h2>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="name"
+          onChange={[Function]}
+          placeholder="Enter name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="lastname"
+          onChange={[Function]}
+          placeholder="Enter Lastname"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="email"
+          onChange={[Function]}
+          placeholder="Enter Email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="form_element"
+      >
+        <input
+          className=""
+          name="password"
+          onChange={[Function]}
+          placeholder="Enter Password"
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        type="submit"
+      >
+        Sign Up
+      </button>
+    </form>
+  </div>
+  <div
+    className="user-list-container"
+  >
+    <h2
+      className="users-title"
+    >
+      Existing Users:
+    </h2>
+    <div
+      className="existing-users limited-width"
+    >
+      <div
+        className="user-container"
+      >
+        <div
+          className="user-avatar"
+        >
+          <UserAvatar
+            filename={undefined}
+          />
+        </div>
+        <div
+          className="user-names"
+        >
+          <p
+            title="name"
+          >
+            name
+          </p>
+          <p
+            title="lastname"
+          >
+            lastname
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

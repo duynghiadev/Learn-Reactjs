@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render component 1`] = `
+<header
+  className="header-container"
+>
+  <div
+    className="only-mobile"
+  >
+    <div
+      className="open-nav"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-bars"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#ffffff",
+            "cursor": "pointer",
+            "padding": "10px",
+          }
+        }
+      />
+    </div>
+    <SideNav
+      onHideNav={[Function]}
+      showNav={false}
+    />
+  </div>
+  <div
+    className="only-desktop"
+  >
+    <div
+      className="left-side"
+    >
+      <NavigationItem
+        item="HOME"
+      />
+      <NavigationItem
+        item="USER_REVIEWS"
+      />
+      <NavigationItem
+        item="ADD_TRIP"
+      />
+    </div>
+    <div
+      className="right-side"
+    >
+      <NavigationItem
+        item="USER_PROFILE"
+      />
+      <NavigationItem
+        item="LOGIN"
+      />
+      <NavigationItem
+        item="SIGNUP"
+      />
+      <NavigationItem
+        item="LOGOUT"
+      />
+    </div>
+  </div>
+  <Link
+    className="logo"
+    to="/"
+  >
+    Travel Stories
+  </Link>
+</header>
+`;
