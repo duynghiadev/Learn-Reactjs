@@ -20,9 +20,5 @@
       "format": "uri"
     }
   },
-  "required": [
-    "username",
-    "firstname",
-    "lastname"
-  ]
+  "required": ["username", "firstname", "lastname"]
 }
