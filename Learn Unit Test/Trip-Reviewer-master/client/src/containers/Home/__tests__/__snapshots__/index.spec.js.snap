@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeContainer /> should render component 1`] = `
+<div
+  className="home-container limited-width-shadow"
+/>
+`;
+
+exports[`<HomeContainer /> should render component with a list of items 1`] = `
+<div
+  className="home-container limited-width-shadow"
+>
+  <TripItem
+    _id="_id"
+    author="author"
+    duration="duration"
+    price="price"
+    rating="rating"
+    title="title"
+  />
+</div>
+`;

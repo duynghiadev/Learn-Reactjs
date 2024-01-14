@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> should render component 1`] = `
+<div>
+  <Header />
+  <div
+    style={
+      Object {
+        "minHeight": "95vh",
+      }
+    }
+  >
+    <div>
+      test
+    </div>
+  </div>
+  <Footer />
+</div>
+`;

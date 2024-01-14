@@ -1,0 +1,47 @@
+{
+  "games": [{
+    "title" : "Pure Desire",
+    "game_number" : "1",
+    "main_characters" : ["Beautiful girl", "Money bag", "Banknotes"],
+    "description" : "This game is very simple and can be played using only a mouse. It is a single player game. The main goal is to catch money to get a girl naked. But banknotes begin to fall down faster all time and this goal becomes more difficult to achieve. The main idea of this game is that an impressive amount of money can enslave people.",
+    "poster" : "game_1.jpg",
+    "hero_image" : "back_1.jpg"
+  },
+
+  {
+    "title" : "Crazy Road",
+    "game_number" : "2",
+    "main_characters" : ["Grandma", "Grandpa", "Cars"],
+    "description" : "This game is very simple but very fun for two players. The main goal is to reach another side of a highway full of cars. Every player has his own area for moving and it is impossible to obstruct an opponent. But this game does not have the end, players decide by themselves when someone wins. The main fun is in a competition.",
+    "poster" : "game_2.jpg",
+    "hero_image" : "back_2.png"
+  },
+
+  {
+    "title" : "Tank Battles",
+    "game_number" : "3",
+    "main_characters" : ["Panzer IV", "T30 Heavy Tank", "Tree"],
+    "description" : "There are two modes in this game - single player and for two players. The main goal is to destroy an opponent before he has destroyed you. In case of a single player mode, role of the opponent plays simple but effective Artificial Intelligence (AI) that makes this game interesting to play even for one player.",
+    "poster" : "game_3.jpg",
+    "hero_image" : "back_3.jpg"
+  },
+
+  {
+    "title" : "Super Sparty",
+    "game_number" : "4",
+    "main_characters" : ["Sparty", "Princess", "Evil enemies"],
+    "description" : "Super Sparty is a classical platform video game, which was developed in a pixel art style. Player controls the protagonist Sparty as he runs, jumps, and climbs across the game's levels. Sparty jumps and stomps on enemies to defeat them, and can collect coins, but the main goal of every level is to reach to the rose of his beloved princess.",
+    "poster" : "game_4.jpg",
+    "hero_image" : "back_4.png"
+  },
+
+  {
+    "title" : "Rock Paper Scissors Lizard Spock",
+    "game_number" : "5",
+    "main_characters" : ["Rock", "Paper", "Scissors", "Lizard", "Spock"],
+    "description" : "This game is an expansion on the Rock, Paper, Scissors with two additional elements, that was first used to settle a dispute about what to watch on TV between Sheldon and Raj in \"The Lizard-Spock Expansion\" episode of the Big Bang Theory. So you can practice it to impress your friends. And also you can be sure that computer will not cheat ever! :)",
+    "poster" : "game_5.jpg",
+    "hero_image" : "back_5.png"
+  }]
+
+}

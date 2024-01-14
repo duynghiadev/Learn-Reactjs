@@ -1,0 +1,130 @@
+body {
+	font-family: sans-serif;
+	font-weight: normal;
+	color: #6d6c6c;
+	background-color: #eee;
+	width: 80%;
+  min-width: 800px;
+  margin-left: 10%;
+}
+h1 {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+#author {
+	margin-top: 0px;
+}
+.title {
+	text-align: center;
+}
+#timer {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.timer_label {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.card{
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
+div#memory_board {
+	background:#CCC;
+	border:#999 1px solid;
+	width:800px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+.options {
+	text-align: center;
+	background: #e0e0e0;
+	height: 350px;
+  width: 100%;
+  min-width: 800px;
+}
+.options-highstores {
+	text-align: center;
+	background: #e0e0e0;
+	height: 240px;
+  width: 100%;
+  min-width: 800px;
+}
+#highscores-data {
+	margin-top: 40px;
+  margin-bottom: 50px;
+	min-width: 800px;
+}
+.highscore-records {
+	font-size: 30px;
+	width: 90%;
+	margin-left: 5%;
+	border-collapse: collapse;
+}
+.record-name {
+	overflow: hidden;
+  width: 40%;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.record-position {
+	overflow: hidden;
+  width: 25%;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.record-result {
+	overflow: hidden;
+  width: 25%;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.radioBtnsContainer {
+	margin-bottom: 50px;
+	text-align: center;
+    display: -webkit-inline-box;
+}
+.radioBtnsContainer-highstores {
+	margin-bottom: 20px;
+	text-align: center;
+  display: -webkit-inline-box;
+}
+#loader {
+	text-align: center;
+	margin-top: 100px;
+}
+.flip3D {
+	width: 71px;
+	height: 71px;
+	margin: 30px;
+	float:left;
+}
+.flip3D > .front{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+	margin-left: -20px;
+  margin-top: -20px;
+}
+.flip3D > .back{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+	margin-left: -20px;
+  margin-top: -20px;
+}

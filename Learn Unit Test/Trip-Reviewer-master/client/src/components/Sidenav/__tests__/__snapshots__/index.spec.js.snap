@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidenav /> should render component 1`] = `
+<ReactSideNav
+  navStyle={
+    Object {
+      "background": "#242424",
+      "maxWidth": "220px",
+    }
+  }
+  onHideNav={[Function]}
+  showNav={undefined}
+>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="HOME"
+      sidenav={true}
+    />
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="USER_PROFILE"
+      sidenav={true}
+    />
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="SIGNUP"
+      sidenav={true}
+    />
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="LOGIN"
+      sidenav={true}
+    />
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="ADD_TRIP"
+      sidenav={true}
+    />
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="USER_REVIEWS"
+      sidenav={true}
+    />
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    <NavigationItem
+      item="LOGOUT"
+      sidenav={true}
+    />
+  </div>
+</ReactSideNav>
+`;
