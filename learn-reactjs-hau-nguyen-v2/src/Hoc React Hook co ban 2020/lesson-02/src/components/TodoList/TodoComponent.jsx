@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 import TodoChild from './TodoChild'
 import './TodoComponent.scss'
+import TodoForm from '../TodoForm/TodoForm'
 
 TodoComponent.propTypes = {}
 
@@ -22,9 +23,23 @@ function TodoComponent(props) {
     setTodoList(newTodoList)
   }
 
+  function handleTodoFormSubmit(formValues) {
+    console.log('formSubmit:', formValues)
+    // add new todo to current todo list
+    const newTodo = {
+      id: todoList.length + 1,
+      ...formValues
+    }
+
+    const newTodoList = [...todoList]
+    newTodoList.push(newTodo)
+    setTodoList(newTodoList)
+  }
+
   return (
     <div className='todo-component'>
       <h1>React hooks - TodoList</h1>
+      <TodoForm onSubmit={handleTodoFormSubmit} />
       <TodoChild todos={todoList} onTodoClick={handleTodoClick} />
     </div>
   )
