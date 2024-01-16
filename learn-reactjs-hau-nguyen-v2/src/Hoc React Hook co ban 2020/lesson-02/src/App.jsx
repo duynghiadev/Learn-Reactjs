@@ -1,6 +1,7 @@
 import './App.scss'
 import ColorBox from './components/ColorBox'
 import ColorBox2 from './components/ColorBox2'
+import ColorBox3 from './components/ColorBox3'
 import TodoList from './components/TodoList'
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
       <ColorBox />
       <ColorBox2 />
       <TodoList />
+      <hr />
+      <ColorBox3 />
+      <hr />
     </div>
   )
 }
