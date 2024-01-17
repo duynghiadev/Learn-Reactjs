@@ -20,8 +20,13 @@ function PostListDetail() {
       }
     }
 
+    console.log('POST list effect')
     fetchPostList()
   }, [])
+
+  useEffect(() => {
+    console.log('TODO list effect')
+  })
 
   return (
     <div>
