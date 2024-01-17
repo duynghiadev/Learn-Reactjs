@@ -14,7 +14,7 @@ function TodoList() {
   return (
     <ul className='todo-list'>
       {todoList.map((todo, index) => (
-        <li key={todo.id} onClick={() => removeTodo(index)}>
+        <li key={index} onClick={() => removeTodo(index)}>
           {todo}
         </li>
       ))}
