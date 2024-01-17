@@ -1,8 +1,8 @@
 import './App.scss'
-import ColorBox from './components/ColorBox'
-import ColorBox2 from './components/ColorBox2'
 import ColorBox3 from './components/ColorBox3'
-import TodoList from './components/TodoList'
+import ColorBox from './components/ExampleColorBox/ColorBox'
+import ColorBox2 from './components/ExampleColorBox/ColorBox2'
+import TodoList from './components/ExampleColorBox/TodoList'
 import TodoComponent from './components/TodoList/TodoComponent'
 
 function App() {
