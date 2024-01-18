@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
-import ButtonShowHide from './ShowHideClock'
+import './Clock.scss' // Import your SCSS file
 
 Clock.propTypes = {}
 
@@ -31,9 +31,9 @@ function Clock() {
   }, [])
 
   return (
-    <div>
-      <h2>This clock is show</h2>
-      <p style={{ fontSize: '42px' }}>{timeString}</p>
+    <div className='clock-container'>
+      <h2>This clock is shown</h2>
+      <p className='clock-time'>{timeString}</p>
     </div>
   )
 }

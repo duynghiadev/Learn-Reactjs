@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Clock from './Clock'
+import './ShowHideClock.scss' // Import your SCSS file
 
 function ButtonShowHide() {
   const [showClock, setShowClock] = useState(true)
@@ -9,9 +10,12 @@ function ButtonShowHide() {
   }
 
   return (
-    <div>
-      {showClock ? <Clock /> : <h2>The clock is hidden</h2>}
-      <button onClick={toggleClock}>{showClock ? 'Hide Clock' : 'Show Clock'}</button>
+    <div className={`button-show-hide-container ${showClock ? 'show' : 'hide'}`}>
+      {showClock ? <Clock /> : <h2 className='hidden-message'>The clock is hidden</h2>}
+
+      <button className='toggle-button' onClick={toggleClock}>
+        {showClock ? 'Hide Clock' : 'Show Clock'}
+      </button>
     </div>
   )
 }
