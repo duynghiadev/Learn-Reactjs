@@ -23,10 +23,16 @@ function PaginationDetail() {
       try {
         // _limit=10&_page=1
         const paramsString = queryString.stringify(filters)
+        console.log('paramsString:', paramsString, '👉 has typeof is:', typeof paramsString)
+
         const requestUrl = `http://js-post-api.herokuapp.com/api/posts?${paramsString}`
         const response = await fetch(requestUrl)
         const responseJSON = await response.json()
-        console.log({ response })
+
+        console.log('responseJSON:', responseJSON)
+        console.log('response:', response)
+        console.log('responseJSON.data:', responseJSON.data)
+        console.log('responseJSON.pagination:', responseJSON.pagination)
 
         const { data, pagination } = responseJSON
         setPostList(data)
