@@ -2,6 +2,7 @@ import './App.scss'
 import ExampleUseEffect from './components/UseEffectHook/ExampleUseEffect1'
 import ExampleUseEffect2 from './components/UseEffectHook/ExampleUseEffect2'
 import PostListDetail from './components/UseEffectHook/ExampleUseEffect4'
+import PostFilterFormDetail from './components/UseEffectHook/ExampleUseEffect8'
 import PaginationDetail from './components/UseEffectHook/ExmapleUseEffect6'
 import ColorBox3 from './components/UseStateHook/ColorBox3'
 import ColorBox from './components/UseStateHook/ExampleColorBox/ColorBox'
@@ -27,6 +28,8 @@ function App() {
       <PostListDetail />
       <hr />
       <PaginationDetail />
+      <hr />
+      <PostFilterFormDetail />
       <hr />
     </div>
   )
