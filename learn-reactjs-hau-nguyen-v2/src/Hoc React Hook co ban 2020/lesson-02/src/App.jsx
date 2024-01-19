@@ -13,6 +13,7 @@ import ButtonShowHide from './components/UseEffectHook/Clock/ShowHideClock'
 import Main from './components/CustomHook/Clock/components/Main'
 import MainOrigin from './components/CustomHook/Clock/components/MainOrigin'
 import MagicBox from './components/CustomHook/Clock/components/MagicBox/MagicBox'
+import HeroMain from './components/ReactMemo/HeroMain'
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
       <MainOrigin />
       <hr />
       <MagicBox />
+      <hr />
+      <HeroMain />
       <hr />
     </div>
   )
