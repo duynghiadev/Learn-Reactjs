@@ -12,6 +12,7 @@ import TodoComponent from './components/UseStateHook/TodoList/TodoComponent'
 import ButtonShowHide from './components/UseEffectHook/Clock/ShowHideClock'
 import Main from './components/CustomHook/Clock/components/Main'
 import MainOrigin from './components/CustomHook/Clock/components/MainOrigin'
+import MagicBox from './components/CustomHook/Clock/components/MagicBox/MagicBox'
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       <Main />
       <hr />
       <MainOrigin />
+      <hr />
+      <MagicBox />
       <hr />
     </div>
   )
