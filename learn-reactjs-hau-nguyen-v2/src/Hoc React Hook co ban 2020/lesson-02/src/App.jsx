@@ -11,6 +11,7 @@ import TodoList from './components/UseStateHook/ExampleColorBox/TodoList'
 import TodoComponent from './components/UseStateHook/TodoList/TodoComponent'
 import ButtonShowHide from './components/UseEffectHook/Clock/ShowHideClock'
 import Main from './components/CustomHook/Clock/components/Main'
+import MainOrigin from './components/CustomHook/Clock/components/MainOrigin'
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
       <ButtonShowHide />
       <hr />
       <Main />
+      <hr />
+      <MainOrigin />
       <hr />
     </div>
   )
