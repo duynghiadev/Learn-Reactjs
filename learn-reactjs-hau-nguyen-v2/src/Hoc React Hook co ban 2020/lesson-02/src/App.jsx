@@ -10,6 +10,7 @@ import ColorBox2 from './components/UseStateHook/ExampleColorBox/ColorBox2'
 import TodoList from './components/UseStateHook/ExampleColorBox/TodoList'
 import TodoComponent from './components/UseStateHook/TodoList/TodoComponent'
 import ButtonShowHide from './components/UseEffectHook/Clock/ShowHideClock'
+import Main from './components/CustomHook/Clock/components/Main'
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
       <PostFilterFormDetail />
       <hr />
       <ButtonShowHide />
+      <hr />
+      <Main />
       <hr />
     </div>
   )
