@@ -4,6 +4,7 @@ import Main from './components/Main/Main'
 import UseState from './components/UseStateHook/UseState'
 import UseReducer from './components/UseReducerHook/UseReducer'
 import Redirect from './Redirect/RedirectLink'
+import UseMemo from './components/UseMemoHook/UseMemoHook'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/' exact component={Main} />
         <Route path='/useState' component={UseState} />
         <Route path='/useReducer' component={UseReducer} />
+        <Route path='/useMemo' component={UseMemo} />
       </Router>
     </div>
   )
