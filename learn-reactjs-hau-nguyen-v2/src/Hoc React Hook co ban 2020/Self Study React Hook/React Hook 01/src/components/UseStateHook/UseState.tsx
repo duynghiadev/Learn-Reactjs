@@ -11,9 +11,12 @@ const UseState = () => {
   }
 
   return (
-    <h3 style={{ color: isGreen ? 'green' : 'red' }} onClick={handleClickGreen}>
-      UseState Example
-    </h3>
+    <div>
+      <h4 style={{ marginBottom: '20px' }}>This is a content of useState hook 🚀</h4>
+      <h3 style={{ color: isGreen ? 'green' : 'red' }} onClick={handleClickGreen}>
+        UseState Example
+      </h3>
+    </div>
   )
 }
 

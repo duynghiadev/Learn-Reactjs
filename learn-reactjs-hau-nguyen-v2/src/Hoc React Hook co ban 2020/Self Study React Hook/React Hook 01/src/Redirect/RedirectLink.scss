@@ -1,0 +1,10 @@
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 40%;
+
+  &.link {
+    text-decoration: none;
+  }
+}
