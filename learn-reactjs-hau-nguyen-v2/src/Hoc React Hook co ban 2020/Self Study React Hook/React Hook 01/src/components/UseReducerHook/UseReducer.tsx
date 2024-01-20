@@ -9,6 +9,8 @@ const UseReducer = () => {
 
   return (
     <div>
+      <h4 style={{ marginBottom: '20px' }}>This is a content of useReducer hook 🚀</h4>
+
       <h1 style={{ color: `rgb(${state.red}, ${state.green}, ${state.blue})` }}>
         useReducer Example
       </h1>

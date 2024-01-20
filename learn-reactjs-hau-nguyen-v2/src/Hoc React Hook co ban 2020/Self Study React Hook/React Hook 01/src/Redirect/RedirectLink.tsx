@@ -13,6 +13,9 @@ const Redirect = () => {
       <Link to='/useReducer' className='link'>
         2. useReducer <br />
       </Link>
+      <Link to='/useMemo' className='link'>
+        3. useMemo <br />
+      </Link>
     </div>
   )
 }
