@@ -16,6 +16,9 @@ const Redirect = () => {
       <Link to='/useMemo' className='link'>
         3. useMemo <br />
       </Link>
+      <Link to='/useCallback' className='link'>
+        4. useCallback <br />
+      </Link>
     </div>
   )
 }
