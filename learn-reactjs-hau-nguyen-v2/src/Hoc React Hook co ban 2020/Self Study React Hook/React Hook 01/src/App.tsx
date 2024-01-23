@@ -7,6 +7,7 @@ import Redirect from './Redirect/RedirectLink'
 import UseMemo from './components/UseMemoHook/UseMemoHook'
 import UseCallback from './components/UseCallbackHook/UseCallbackHook'
 import UseRef from './components/UseRefHook/UseRef'
+import UseLayoutEffect from './components/UseLayoutEffectHook/UseLayoutEffect'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/useMemo' component={UseMemo} />
         <Route path='/useCallback' component={UseCallback} />
         <Route path='/useRef' component={UseRef} />
+        <Route path='/useLayoutEffect' component={UseLayoutEffect} />
       </Router>
     </div>
   )
