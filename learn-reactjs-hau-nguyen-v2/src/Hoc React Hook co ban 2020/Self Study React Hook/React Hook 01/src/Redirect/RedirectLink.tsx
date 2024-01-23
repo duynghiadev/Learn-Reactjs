@@ -22,6 +22,9 @@ const Redirect = () => {
       <Link to='/useRef' className='link'>
         5. useRef <br />
       </Link>
+      <Link to='/useLayoutEffect' className='link'>
+        6. useLayoutEffect <br />
+      </Link>
     </div>
   )
 }
