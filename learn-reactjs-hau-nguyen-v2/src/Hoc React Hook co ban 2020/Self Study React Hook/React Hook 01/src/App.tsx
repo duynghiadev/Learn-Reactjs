@@ -9,6 +9,7 @@ import UseCallback from './components/UseCallbackHook/UseCallbackHook'
 import UseRef from './components/UseRefHook/UseRef'
 import UseLayoutEffect from './components/UseLayoutEffectHook/UseLayoutEffect'
 import UseLayoutEffectExample from './components/UseLayoutEffectHook/UseLayoutEffectExample'
+import UseContext from './components/UseContextHook/UseContext'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/useRef' component={UseRef} />
         <Route path='/useLayoutEffect' component={UseLayoutEffect} />
         <Route path='/useLayoutEffect-1' component={UseLayoutEffectExample} />
+        <Route path='/useContext' component={UseContext} />
       </Router>
     </div>
   )
