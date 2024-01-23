@@ -25,6 +25,9 @@ const Redirect = () => {
       <Link to='/useLayoutEffect' className='link'>
         6. useLayoutEffect <br />
       </Link>
+      <Link to='useLayoutEffect-1' className='link'>
+        6.1. useLayoutEffect part 2 <br />
+      </Link>
     </div>
   )
 }
