@@ -26,6 +26,10 @@ const UseRef = () => {
 
   return (
     <div>
+      <h2 style={{ marginBottom: '20px', color: 'red' }}>
+        This is a content of <code>useRef</code> hook 🚀
+      </h2>
+
       <h1>UseRef Example</h1>
       <button onClick={incrementAndDelayLogging}>Delay Logging</button>
       <h4>plain number: {plainNumber}</h4>
