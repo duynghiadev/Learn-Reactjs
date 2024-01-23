@@ -6,6 +6,7 @@ import UseReducer from './components/UseReducerHook/UseReducer'
 import Redirect from './Redirect/RedirectLink'
 import UseMemo from './components/UseMemoHook/UseMemoHook'
 import UseCallback from './components/UseCallbackHook/UseCallbackHook'
+import UseRef from './components/UseRefHook/UseRef'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/useReducer' component={UseReducer} />
         <Route path='/useMemo' component={UseMemo} />
         <Route path='/useCallback' component={UseCallback} />
+        <Route path='/useRef' component={UseRef} />
       </Router>
     </div>
   )
