@@ -11,6 +11,7 @@ import UseLayoutEffect from './components/UseLayoutEffectHook/UseLayoutEffect'
 import UseLayoutEffectExample from './components/UseLayoutEffectHook/UseLayoutEffectExample'
 import UseContext from './components/UseContextHook/UseContext'
 import UseImporativeHandle from './components/UseImperativeHandleHook/UseImporativeHandle'
+import UseLayoutEffectExampleFirst from './components/Example-UseEffect-UseLayoutEffect/UseLayoutEffectHook'
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='/useRef' component={UseRef} />
         <Route path='/useLayoutEffect' component={UseLayoutEffect} />
         <Route path='/useLayoutEffect-1' component={UseLayoutEffectExample} />
+        <Route path='/examplefromfilemarkdown-2' component={UseLayoutEffectExampleFirst} />
         <Route path='/useContext' component={UseContext} />
         <Route path='/useImporativeHandle' component={UseImporativeHandle} />
       </Router>
