@@ -28,8 +28,11 @@ const Redirect = () => {
       <Link to='/useLayoutEffect-1' className='link'>
         6.1. useLayoutEffect part 2 <br />
       </Link>
-      <Link to='/examplefromfilemarkdown-2' className='link'>
+      <Link to='/examplefromfilemarkdown-1' className='link'>
         6.2. Compare between useEffect and useLayoutEffect 1<br />
+      </Link>
+      <Link to='/examplefromfilemarkdown-2' className='link'>
+        6.3. Compare between useEffect and useLayoutEffect 2 <br />
       </Link>
       <Link to='/useContext' className='link'>
         7. useContext <br />
