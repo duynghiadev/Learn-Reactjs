@@ -36,7 +36,6 @@ const Redirect = () => {
       </Link>
       <Link to='/useContext' className='link'>
         7. useContext <br />
-        {/* ❌❌ Ngày mai vào browser Edge xem cách sử dụng useContext (bằng tiếng anh) ❌❌ */}
       </Link>
       <Link to='/useImporativeHandle' className='link'>
         8. useImporativeHandles <br />
