@@ -1,9 +1,11 @@
 import './App.css'
+import UseState from './components/useState/UseState'
 
 function App() {
   return (
     <div>
-      <h1>Hello, this is a folder React Hook</h1>
+      <UseState />
+      <hr />
     </div>
   )
 }
