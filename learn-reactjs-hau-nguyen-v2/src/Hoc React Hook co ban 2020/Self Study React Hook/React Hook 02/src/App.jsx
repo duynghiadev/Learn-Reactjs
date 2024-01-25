@@ -1,4 +1,5 @@
 import './App.css'
+import UseEffect from './components/useEffect/UseEffect'
 import UseReducer from './components/useReducer/UseReducer'
 import UseState from './components/useState/UseState'
 
@@ -8,6 +9,8 @@ function App() {
       <UseState />
       <hr />
       <UseReducer />
+      <hr />
+      <UseEffect />
       <hr />
     </div>
   )
