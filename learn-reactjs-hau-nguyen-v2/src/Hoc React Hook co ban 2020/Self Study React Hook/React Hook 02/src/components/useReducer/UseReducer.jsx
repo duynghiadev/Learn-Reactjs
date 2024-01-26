@@ -13,7 +13,7 @@ const UseReducer = () => {
 
   return (
     <div id='usereducer'>
-      <strong>This is a useReducer</strong>
+      <strong>This is a useReducer 👇</strong>
       <h1>{state.count}</h1>
       <button
         onClick={() => {
