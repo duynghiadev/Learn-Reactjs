@@ -43,7 +43,7 @@ const UseState = () => {
   return (
     <div>
       <div id='usestate'>
-        <strong>This is a useState hook</strong>
+        <strong>This is a useState hook 👇</strong>
         <h1>{counter}</h1>
         <button onClick={handleIncrement}>Click</button>
       </div>
