@@ -14,6 +14,7 @@ import EffectsDemoCustomHook1 from './compare hooks/UseStateAndUseEffect/Effects
 import EffectsDemoCustomHook2 from './compare hooks/UseStateAndUseEffect/EffectsDemoCustomHook2'
 import EffectsDemoEffectConditional from './compare hooks/UseStateAndUseEffect/EffectsDemoEffectConditional'
 import EffectsDemoEffectPrevData from './compare hooks/UseStateAndUseEffect/EffectsDemoEffectPrevData'
+import UseRef from './components/useRef/UseRef'
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       <EffectsDemoCustomHook2 />
       <EffectsDemoEffectConditional />
       <EffectsDemoEffectPrevData />
+      {/* Example useRef */}
+      <UseRef />
     </div>
   )
 }
