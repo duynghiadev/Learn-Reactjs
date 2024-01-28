@@ -21,6 +21,8 @@ import EditableItem3 from './compare hooks/RenderPropAndCustomHook/class compone
 import ChangeProfile from './compare hooks/RenderPropAndCustomHook/custom hook/ChangeProfile'
 import UserProfile from './compare hooks/RenderPropAndCustomHook/custom hook/UserProfile'
 import User from './compare hooks/RenderPropAndCustomHook/custom hook/User'
+import CardApp from './compare hooks/RenderPropAndCustomHook/renderprops/CardApp'
+import CardAppJSX from './compare hooks/RenderPropAndCustomHook/renderpropsusejsx/CardAppJSX'
 
 function App() {
   return (
@@ -57,6 +59,9 @@ function App() {
         <ChangeProfile />
         <UserProfile />
       </User>
+      {/* Render props */}
+      <CardApp />
+      <CardAppJSX />
     </div>
   )
 }
