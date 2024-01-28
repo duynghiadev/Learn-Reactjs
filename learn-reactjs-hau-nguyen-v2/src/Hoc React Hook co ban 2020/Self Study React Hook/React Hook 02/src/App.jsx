@@ -15,9 +15,9 @@ import EffectsDemoCustomHook2 from './compare hooks/UseStateAndUseEffect/Effects
 import EffectsDemoEffectConditional from './compare hooks/UseStateAndUseEffect/EffectsDemoEffectConditional'
 import EffectsDemoEffectPrevData from './compare hooks/UseStateAndUseEffect/EffectsDemoEffectPrevData'
 import UseRef from './components/useRef/UseRef'
-import EditableItem1 from './compare hooks/Render Prop and Custom Hook/function component/EditableItem1'
-import EditableItem2 from './compare hooks/Render Prop and Custom Hook/function component/EditableItem2'
-import EditableItem3 from './compare hooks/Render Prop and Custom Hook/class component/EditableItem3'
+import EditableItem1 from './compare hooks/RenderPropAndCustomHook/function component/EditableItem1'
+import EditableItem2 from './compare hooks/RenderPropAndCustomHook/function component/EditableItem2'
+import EditableItem3 from './compare hooks/RenderPropAndCustomHook/class component/EditableItem3'
 
 function App() {
   return (
