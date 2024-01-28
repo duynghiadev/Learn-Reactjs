@@ -52,6 +52,7 @@ function App() {
       <EditableItem1 />
       <EditableItem2 />
       <EditableItem3 />
+      {/* Custom hook using useContext hook */}
       <User>
         <ChangeProfile />
         <UserProfile />
