@@ -18,6 +18,9 @@ import UseRef from './components/useRef/UseRef'
 import EditableItem1 from './compare hooks/RenderPropAndCustomHook/function component/EditableItem1'
 import EditableItem2 from './compare hooks/RenderPropAndCustomHook/function component/EditableItem2'
 import EditableItem3 from './compare hooks/RenderPropAndCustomHook/class component/EditableItem3'
+import ChangeProfile from './compare hooks/RenderPropAndCustomHook/custom hook/ChangeProfile'
+import UserProfile from './compare hooks/RenderPropAndCustomHook/custom hook/UserProfile'
+import User from './compare hooks/RenderPropAndCustomHook/custom hook/User'
 
 function App() {
   return (
@@ -49,6 +52,10 @@ function App() {
       <EditableItem1 />
       <EditableItem2 />
       <EditableItem3 />
+      <User>
+        <ChangeProfile />
+        <UserProfile />
+      </User>
     </div>
   )
 }
