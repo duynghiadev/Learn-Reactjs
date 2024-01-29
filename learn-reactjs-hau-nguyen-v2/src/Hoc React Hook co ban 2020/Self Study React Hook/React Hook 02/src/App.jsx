@@ -25,6 +25,7 @@ import CardApp from './compare hooks/RenderPropAndCustomHook/renderprops/CardApp
 import CardAppJSX from './compare hooks/RenderPropAndCustomHook/renderpropsusejsx/CardAppJSX'
 import UseLayoutEffect from './components/useLayoutEffect/UseLayoutEffect'
 import UseImperativeHandle from './components/useImperativeHandle/UseImperativeHandle'
+import UseContext from './components/useContext/UseContext'
 
 function App() {
   return (
@@ -68,6 +69,8 @@ function App() {
       <UseLayoutEffect />
       {/* Example useImperativeHandle */}
       <UseImperativeHandle />
+      {/* Example useContext */}
+      <UseContext />
     </div>
   )
 }
