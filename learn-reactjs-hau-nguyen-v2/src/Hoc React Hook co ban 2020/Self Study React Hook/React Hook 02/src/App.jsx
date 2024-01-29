@@ -28,6 +28,7 @@ import UseImperativeHandle from './components/useImperativeHandle/UseImperativeH
 import UseContext from './components/useContext/UseContext'
 import UseMemo from './components/useMemo/UseMemo'
 import UseMemoModify from './components/useMemo/UseMemoModify'
+import UseCallback from './components/useCallback/UseCallback'
 
 function App() {
   return (
@@ -76,6 +77,8 @@ function App() {
       {/* Example useMemo */}
       <UseMemo />
       <UseMemoModify />
+      {/* Example useCallback */}
+      <UseCallback />
     </div>
   )
 }
