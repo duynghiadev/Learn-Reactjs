@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react'
 import Child from './Child'
+import ChildModify from './ChildModify'
 
 const UseCallback = () => {
   const [toggle, setToggle] = useState(false)
@@ -20,6 +21,7 @@ const UseCallback = () => {
     <div className='App'>
       <strong>This is a useCallback hook 👇</strong>
       <Child returnComments={returnComments} />
+      <ChildModify returnComments={returnComments} />
 
       <button onClick={handleToggle}>Toggle</button>
 
