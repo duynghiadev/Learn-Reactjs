@@ -27,6 +27,7 @@ import UseLayoutEffect from './components/useLayoutEffect/UseLayoutEffect'
 import UseImperativeHandle from './components/useImperativeHandle/UseImperativeHandle'
 import UseContext from './components/useContext/UseContext'
 import UseMemo from './components/useMemo/UseMemo'
+import UseMemoModify from './components/useMemo/UseMemoModify'
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
       <UseContext />
       {/* Example useMemo */}
       <UseMemo />
+      <UseMemoModify />
     </div>
   )
 }
