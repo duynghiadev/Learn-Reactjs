@@ -24,6 +24,7 @@ import User from './compare hooks/RenderPropAndCustomHook/custom hook/User'
 import CardApp from './compare hooks/RenderPropAndCustomHook/renderprops/CardApp'
 import CardAppJSX from './compare hooks/RenderPropAndCustomHook/renderpropsusejsx/CardAppJSX'
 import UseLayoutEffect from './components/useLayoutEffect/UseLayoutEffect'
+import UseImperativeHandle from './components/useImperativeHandle/UseImperativeHandle'
 
 function App() {
   return (
@@ -65,6 +66,8 @@ function App() {
       <CardAppJSX />
       {/* Example useLayoutEffect */}
       <UseLayoutEffect />
+      {/* Example useImperativeHandle */}
+      <UseImperativeHandle />
     </div>
   )
 }
