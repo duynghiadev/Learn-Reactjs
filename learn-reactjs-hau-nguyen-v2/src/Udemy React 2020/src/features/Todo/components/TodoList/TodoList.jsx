@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
+import './style.scss'
 
 const TodoList = (props) => {
   const { todoList } = props
 
   return (
-    <ul>
+    <ul className='todo-list'>
       {todoList.map((todo) => (
         <li key={todo.id}>{todo.title}</li>
       ))}
