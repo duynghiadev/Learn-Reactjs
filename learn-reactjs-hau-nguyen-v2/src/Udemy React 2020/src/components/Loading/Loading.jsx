@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types'
 import './style.scss'
 
-Loading.propTypes = {}
-
 const Loading = () => {
   return (
     <div>
@@ -10,5 +8,7 @@ const Loading = () => {
     </div>
   )
 }
+
+Loading.propTypes = {}
 
 export default Loading
