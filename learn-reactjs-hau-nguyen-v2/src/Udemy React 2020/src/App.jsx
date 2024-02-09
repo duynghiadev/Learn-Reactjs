@@ -1,6 +1,7 @@
 import './App.css'
 import ColorList from './components/ColorList/ColorList'
 import Loading from './components/Loading/Loading'
+import AlbumFeature from './features/Album'
 import TodoFeature from './features/Todo'
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Loading />
       <hr />
       <TodoFeature />
+      <hr />
+      <AlbumFeature />
       <hr />
     </div>
   )
