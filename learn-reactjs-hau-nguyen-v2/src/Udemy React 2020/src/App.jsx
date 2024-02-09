@@ -1,6 +1,7 @@
 import './App.css'
 import ColorList from './components/ColorList/ColorList'
 import Loading from './components/Loading/Loading'
+import TodoFeature from './features/Todo'
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <ColorList />
       <hr />
       <Loading />
+      <hr />
+      <TodoFeature />
       <hr />
     </div>
   )
