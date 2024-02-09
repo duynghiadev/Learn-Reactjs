@@ -1,5 +1,6 @@
 import './App.css'
 import ColorList from './components/ColorList/ColorList'
+import Loading from './components/Loading/Loading'
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <h2>Hello, my name is Duy Nghia. Currently, i'm studying ReactJS</h2>
       <hr />
       <ColorList />
+      <hr />
+      <Loading />
+      <hr />
     </div>
   )
 }
