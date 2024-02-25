@@ -1,24 +1,42 @@
 import PropTypes from 'prop-types'
 import './style.scss'
+import classnames from 'classnames'
 
 const TodoList = (props) => {
-  const { todoList } = props
+  const { todoList, onTodoClick } = props
+
+  const handleTodoClick = (todo, idx) => {
+    if (!onTodoClick) return
+
+    onTodoClick(todo, idx)
+  }
 
   return (
     <ul className='todo-list'>
-      {todoList.map((todo) => (
-        <li key={todo.id}>{todo.title}</li>
+      {todoList.map((todo, idx) => (
+        <li
+          key={todo.id}
+          className={classnames({
+            'todo-item': true,
+            completed: todo.status === 'completed'
+          })}
+          onClick={() => handleTodoClick(todo, idx)}
+        >
+          {todo.title}
+        </li>
       ))}
     </ul>
   )
 }
 
 TodoList.propTypes = {
-  todoList: PropTypes.array
+  todoList: PropTypes.array,
+  onTodoClick: PropTypes.func
 }
 
 TodoList.defaultProps = {
-  todoList: []
+  todoList: [],
+  onTodoClick: null
 }
 
 export default TodoList

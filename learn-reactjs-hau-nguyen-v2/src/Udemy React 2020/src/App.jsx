@@ -12,18 +12,18 @@ function App() {
       <h1>Hello React Udemy Hau Nguyen 2020</h1>
       <h2>Hello, my name is Duy Nghia. Currently, i'm studying ReactJS</h2>
       <hr />
-      <ColorList />
+      {/* <ColorList />
       <hr />
       <Loading />
-      <hr />
+      <hr /> */}
       <TodoFeature />
       <hr />
-      <AlbumFeature />
+      {/* <AlbumFeature />
       <hr />
       <ColorBox />
       <hr />
       <Couter />
-      <hr />
+      <hr /> */}
     </div>
   )
 }
