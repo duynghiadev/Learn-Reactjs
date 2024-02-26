@@ -2,6 +2,7 @@ import './App.css'
 import ColorBox from './components/ColorBox'
 import ColorList from './components/ColorList/ColorList'
 import HomePage from './components/Component life cycle/ComponentDidMount/HomePage'
+import CountdownParent from './components/Component life cycle/ComponentWillUnmount/CountdownParent'
 import Couter from './components/Couter'
 import Loading from './components/Loading/Loading'
 import AlbumFeature from './features/Album'
@@ -27,6 +28,9 @@ function App() {
       <Couter />
       <hr /> */}
       <HomePage />
+      <br />
+      <hr />
+      <CountdownParent />
       <br />
       <hr />
     </div>
