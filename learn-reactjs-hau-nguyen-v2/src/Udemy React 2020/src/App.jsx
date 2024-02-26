@@ -2,6 +2,7 @@ import './App.css'
 import ColorBox from './components/ColorBox'
 import ColorList from './components/ColorList/ColorList'
 import HomePage from './components/Component life cycle/ComponentDidMount/HomePage'
+import ResultComponent from './components/Component life cycle/ComponentDidUpdate/ResultComponent'
 import CountdownParent from './components/Component life cycle/ComponentWillUnmount/CountdownParent'
 import Couter from './components/Couter'
 import Loading from './components/Loading/Loading'
@@ -31,6 +32,9 @@ function App() {
       <br />
       <hr />
       <CountdownParent />
+      <br />
+      <hr />
+      <ResultComponent />
       <br />
       <hr />
     </div>
