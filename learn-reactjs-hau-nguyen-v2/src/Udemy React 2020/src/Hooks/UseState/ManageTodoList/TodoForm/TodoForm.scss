@@ -1,0 +1,17 @@
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.todo-form input[type='text'] {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.todo-form input[type='text']:focus {
+  outline: none;
+  border-color: #007bff;
+}

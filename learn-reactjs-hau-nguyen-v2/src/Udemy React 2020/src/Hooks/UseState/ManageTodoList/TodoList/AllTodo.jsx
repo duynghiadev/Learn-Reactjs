@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import TodoList from './TodoList'
 import './AllTodo.scss'
+import TodoForm from '../TodoForm/TodoForm'
 
 const AllTodo = () => {
   const [todoList, setTodoList] = useState([
@@ -19,9 +20,23 @@ const AllTodo = () => {
     setTodoList(newTodo)
   }
 
+  const handleTodoFormSubmit = (formValues) => {
+    console.log('formValues:', formValues)
+    // add new todo to current todo list
+    const newTodo = {
+      id: todoList.length + 1,
+      ...formValues
+    }
+
+    const newTodoList = [...todoList]
+    newTodoList.push(newTodo)
+    setTodoList(newTodoList)
+  }
+
   return (
     <div className='all-todo-container'>
       <h2>React hooks - Todo Lists</h2>
+      <TodoForm onSubmit={handleTodoFormSubmit} />
       <TodoList todos={todoList} onTodoClick={handleTodoClick} />
     </div>
   )
