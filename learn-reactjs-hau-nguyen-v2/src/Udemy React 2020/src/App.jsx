@@ -11,7 +11,7 @@ import Loading from './components/Loading/Loading'
 import AlbumFeature from './features/Album'
 import TodoFeature from './features/Todo'
 import Home from './Home'
-import ColorBoxVer2 from './Hooks/UseState/ColorBox/ColorBoxVer2'
+import ColorBoxVer2 from './Hooks/UseState/ColorBoxVer2/ColorBoxVer2'
 
 function App() {
   return (
