@@ -1,3 +1,7 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './ColorList.scss' // Import SCSS file
+
 const ColorList = () => {
   const logo = 'https://cdn.cleancommit.io/blog/2023/02/Vite-logo.jpg'
   const name = 'Duy Nghia'
@@ -10,51 +14,62 @@ const ColorList = () => {
   const colorList = ['red', 'green', 'blue']
 
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>{name}</p>
-        <p>
+    <div className='ColorList'>
+      <header className='ColorList__header'>
+        <img src={logo} className='ColorList__logo' alt='logo' />
+        <p className='ColorList__name'>{name}</p>
+        <p className='ColorList__info'>
           Xin chào {name} - {age} tuổi - {isMale ? 'Nam' : 'Nữ'}
         </p>
-        <p>{isMale && <span>Giới tính: Nam</span>}</p>
-        <p>{!isMale && <span>Giới tính: Nữ</span>}</p>
-
-        {isMale && (
-          <>
-            <p>Male 1</p>
-            <p>Male 2</p>
-            <p>Male 3</p>
-          </>
-        )}
-
-        {!isMale && (
-          <>
-            <p>Female 1</p>
-            <p>Female 2</p>
-            <p>Female 3</p>
-          </>
-        )}
-
-        <p>{student.name}</p>
+        <p className='ColorList__info'>{isMale ? 'Giới tính: Nam' : 'Giới tính: Nữ'}</p>
+        <p className='ColorList__info'>{student.name}</p>
 
         <div>
           <ul>
-            {colorList.map((color) => (
+            {colorList.map((color, index) => (
               <li
-                key={color}
+                key={index}
                 style={{
                   backgroundColor: color,
                   color: 'white',
                   padding: '5px',
                   margin: '5px',
-                  borderRadius: '5px'
+                  borderRadius: '5px',
+                  width: '40rem'
                 }}
               >
                 {color}
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Add links for navigation */}
+        <div>
+          <Link className='ColorList__link' to='/loading'>
+            Go to Loading
+          </Link>
+          <Link className='ColorList__link' to='/todos'>
+            Go to Todos
+          </Link>
+          <Link className='ColorList__link' to='/albums'>
+            Go to Albums
+          </Link>
+          <Link className='ColorList__link' to='/colorbox'>
+            Go to Color Box
+          </Link>
+          <Link className='ColorList__link' to='/counter'>
+            Go to Counter
+          </Link>
+          <Link className='ColorList__link' to='/homepage'>
+            Go to Home Page
+          </Link>
+          <Link className='ColorList__link' to='/countdown'>
+            Go to Countdown
+          </Link>
+          <Link className='ColorList__link' to='/result'>
+            Go to Result
+          </Link>
         </div>
       </header>
     </div>
