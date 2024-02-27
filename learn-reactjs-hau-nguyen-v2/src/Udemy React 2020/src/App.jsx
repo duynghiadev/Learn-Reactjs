@@ -4,7 +4,7 @@ import ColorList from './components/ColorList/ColorList'
 import HomePage from './components/Component life cycle/ComponentDidMount/HomePage'
 import ResultComponent from './components/Component life cycle/ComponentDidUpdate/ResultComponent'
 import CountdownParent from './components/Component life cycle/ComponentWillUnmount/CountdownParent'
-import Couter from './components/Counter'
+import Counter from './components/Counter'
 import Loading from './components/Loading/Loading'
 import AlbumFeature from './features/Album'
 import TodoFeature from './features/Todo'
@@ -24,9 +24,12 @@ function App() {
       <hr />
       <AlbumFeature />
       <hr />
+      <br />
       <ColorBox />
+      <br />
       <hr />
-      <Couter />
+      <Counter />
+      <br />
       <hr />
       <HomePage />
       <br />

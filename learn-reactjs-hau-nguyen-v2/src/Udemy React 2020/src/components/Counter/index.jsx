@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 
-const Couter = () => {
+const Counter = () => {
   const [counter, setCounter] = useState(0)
 
   return (
@@ -12,6 +12,6 @@ const Couter = () => {
   )
 }
 
-Couter.propTypes = {}
+Counter.propTypes = {}
 
-export default Couter
+export default Counter
