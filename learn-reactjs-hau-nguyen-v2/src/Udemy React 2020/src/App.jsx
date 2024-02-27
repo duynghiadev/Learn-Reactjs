@@ -11,6 +11,7 @@ import Loading from './components/Loading/Loading'
 import AlbumFeature from './features/Album'
 import TodoFeature from './features/Todo'
 import Home from './Home'
+import ColorBoxVer2 from './Hooks/UseState/ColorBox/ColorBoxVer2'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/homepage' element={<HomePage />} />
           <Route path='/countdown' element={<CountdownParent />} />
           <Route path='/result' element={<ResultComponent />} />
+          <Route path='/colorboxver2' element={<ColorBoxVer2 />} />
           {/* Add a catch-all route for unmatched paths */}
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
