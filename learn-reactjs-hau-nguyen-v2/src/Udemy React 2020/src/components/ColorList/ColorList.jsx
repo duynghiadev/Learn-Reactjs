@@ -73,6 +73,9 @@ const ColorList = () => {
           <Link className='ColorList__link' to='/colorboxver2'>
             Go to ColorBoxVer2
           </Link>
+          <Link className='ColorList__link' to='/todolist'>
+            Go to Todo Lists
+          </Link>
         </div>
       </header>
     </div>
