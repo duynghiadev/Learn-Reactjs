@@ -15,6 +15,8 @@ Trong video này, mình cùng code với các bạn để chia sẻ một vài �
 
 Cùng mình xem hết video để giải đáp những thắc mắc trên nhé! ❤️
 
+---
+
 # React hooks: 07 - Gọi API với useEffect hooks (2020) 🎉
 
 Hướng dẫn gọi API lên server lấy dữ liệu về hiển thị lên UI với useEffect hooks. Đây là một video trong chuỗi React hooks của mình.
