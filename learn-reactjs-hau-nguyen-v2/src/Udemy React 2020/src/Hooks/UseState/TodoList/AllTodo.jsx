@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import TodoList from './TodoList'
+import './AllTodo.scss'
 
 const AllTodo = () => {
   const [todoList, setTodoList] = useState([
@@ -19,7 +20,7 @@ const AllTodo = () => {
   }
 
   return (
-    <div>
+    <div className='all-todo-container'>
       <h2>React hooks - Todo Lists</h2>
       <TodoList todos={todoList} onTodoClick={handleTodoClick} />
     </div>
