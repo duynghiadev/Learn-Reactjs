@@ -17,6 +17,7 @@ import PostAll from './Hooks/UseEffect/PostList/PostAll'
 import ClockMain from './Hooks/UseEffect/Clock/ClockMain'
 import Clock from './Hooks/CustomHooks/Clock/components/Clock'
 import BetterClock from './Hooks/CustomHooks/BetterClock/components/BetterClock'
+import MagicBox from './Hooks/CustomHooks/MagicBox/MagicBox'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path='/clock' element={<ClockMain />} />
           <Route path='/clockcustomhook' element={<Clock />} />
           <Route path='/betterclock' element={<BetterClock />} />
+          <Route path='/magicbox' element={<MagicBox />} />
           {/* Add a catch-all route for unmatched paths */}
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
