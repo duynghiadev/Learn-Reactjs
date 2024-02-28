@@ -1,5 +1,3 @@
-import './formatDate.scss'
-
 const formatDate = (date) => {
   if (!date) return ''
 
