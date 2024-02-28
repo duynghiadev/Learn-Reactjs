@@ -82,6 +82,12 @@ const ColorList = () => {
           <Link className='ColorList__link' to='/clock'>
             Go to Clock
           </Link>
+          <Link className='ColorList__link' to='/clockcustomhook'>
+            Go to Clock Custom Hook
+          </Link>
+          <Link className='ColorList__link' to='/betterclock'>
+            Go to Clock Custom Hook - Better Clock
+          </Link>
         </div>
       </header>
     </div>
