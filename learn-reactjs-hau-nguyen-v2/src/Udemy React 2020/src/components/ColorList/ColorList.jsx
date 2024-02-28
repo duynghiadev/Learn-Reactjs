@@ -91,6 +91,9 @@ const ColorList = () => {
           <Link className='ColorList__link' to='/magicbox'>
             Go to Magic Box Custom Hook
           </Link>
+          <Link className='ColorList__link' to='/reactmemo'>
+            Go to React.Memo and Memoization (Higher Order Component)
+          </Link>
         </div>
       </header>
     </div>
