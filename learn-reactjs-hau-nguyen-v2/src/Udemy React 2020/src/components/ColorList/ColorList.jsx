@@ -94,6 +94,9 @@ const ColorList = () => {
           <Link className='ColorList__link' to='/reactmemo'>
             Go to React.Memo and Memoization (Higher Order Component)
           </Link>
+          <Link className='ColorList__link' to='/useref'>
+            Go to useRef hooks
+          </Link>
         </div>
       </header>
     </div>

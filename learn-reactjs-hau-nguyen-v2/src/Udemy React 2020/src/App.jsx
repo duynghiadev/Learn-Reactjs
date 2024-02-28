@@ -19,6 +19,7 @@ import Clock from './Hooks/CustomHooks/Clock/components/Clock'
 import BetterClock from './Hooks/CustomHooks/BetterClock/components/BetterClock'
 import MagicBox from './Hooks/CustomHooks/MagicBox/MagicBox'
 import ReactMemo from './Hooks/ReactMemo/ReactMemo'
+import UseRef from './Hooks/UseRef/UseRef'
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path='/betterclock' element={<BetterClock />} />
           <Route path='/magicbox' element={<MagicBox />} />
           <Route path='/reactmemo' element={<ReactMemo />} />
+          <Route path='/useref' element={<UseRef />} />
           {/* Add a catch-all route for unmatched paths */}
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
