@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
+import './PostFilterForm.scss'
 
 const PostFiltersForm = (props) => {
   const { onSubmit } = props
@@ -27,13 +28,19 @@ const PostFiltersForm = (props) => {
   }
 
   return (
-    <form>
-      <input type='text' value={searchTerm} onChange={handleSearchTermChange} />
+    <form className='post-filters-form'>
+      <input
+        type='text'
+        placeholder='search...'
+        value={searchTerm}
+        onChange={handleSearchTermChange}
+        className='post-filters-form__input'
+      />
     </form>
   )
 }
 
-PostFiltersForm.propType = {
+PostFiltersForm.propTypes = {
   onSubmit: PropTypes.func
 }
 

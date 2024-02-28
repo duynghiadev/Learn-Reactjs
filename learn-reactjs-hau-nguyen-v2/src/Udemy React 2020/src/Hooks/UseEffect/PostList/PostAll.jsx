@@ -3,6 +3,7 @@ import queryString from 'query-string'
 import PostList from './PostList'
 import Pagination from '../Pagination/Pagination'
 import PostFiltersForm from '../PostFilter/PostFilterForm'
+import './PostAll.scss'
 
 const PostAll = () => {
   const [postList, setPostList] = useState([])
@@ -56,8 +57,8 @@ const PostAll = () => {
   }
 
   return (
-    <div>
-      <h2>React Hooks - PostList</h2>
+    <div className='post-all'>
+      <h2 className='post-all__title'>React Hooks - PostList</h2>
       <PostFiltersForm onSubmit={handleFiltersChange} />
       <PostList posts={postList} />
       <Pagination pagination={pagination} onPageChange={handlePageChange} />
