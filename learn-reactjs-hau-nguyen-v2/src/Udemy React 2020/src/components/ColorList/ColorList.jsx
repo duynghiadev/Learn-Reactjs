@@ -79,6 +79,9 @@ const ColorList = () => {
           <Link className='ColorList__link' to='/postlist'>
             Go to Post Lists
           </Link>
+          <Link className='ColorList__link' to='/clock'>
+            Go to Clock
+          </Link>
         </div>
       </header>
     </div>

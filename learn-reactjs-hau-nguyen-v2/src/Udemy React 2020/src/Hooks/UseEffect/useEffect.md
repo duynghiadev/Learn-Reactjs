@@ -70,3 +70,17 @@ Cùng mình xem hết video để giải đáp những thắc mắc trên nhé! 
   - Như vậy nó sẽ giúp mình giữa những lần render và những lần setState thì mình vẫn giữ được cái giá trị của nó (tức là cái current trong hook useRef)
 
 ---
+
+# React hooks: 10 - useEffect cleanup với code đồng hồ (2020)
+
+Cùng mình code đồng hồ điện tử đơn giản để minh hoạ trường hợp sử dụng useEffect hooks có phần cleanup nhé! 🙂
+
+Đây là một video trong chuỗi React hooks của mình.
+
+Trong video này, mình cùng code với các bạn để chia sẻ một vài ý:
+
+- Code useEffect cleanup như thế nào?
+- Viết hàm formatDate đơn giản
+- Fix lỗi một trường hợp của setState khi component unmounted
+
+Cùng mình xem hết video để giải đáp những thắc mắc trên nhé! ❤️

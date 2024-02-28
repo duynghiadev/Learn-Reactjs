@@ -14,6 +14,7 @@ import Home from './Home'
 import ColorBoxVer2 from './Hooks/UseState/ColorBoxVer2/ColorBoxVer2'
 import AllTodo from './Hooks/UseState/ManageTodoList/TodoList/AllTodo'
 import PostAll from './Hooks/UseEffect/PostList/PostAll'
+import ClockMain from './Hooks/UseEffect/Clock/ClockMain'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/colorboxver2' element={<ColorBoxVer2 />} />
           <Route path='/todolist' element={<AllTodo />} />
           <Route path='/postlist' element={<PostAll />} />
+          <Route path='/clock' element={<ClockMain />} />
           {/* Add a catch-all route for unmatched paths */}
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
