@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import TodoList from '../../components/TodoList/TodoList'
+import { useLocation } from 'react-router-dom'
+import queryString from 'query-string'
 
 const ListPage = (props) => {
   const initTodoList = [
@@ -21,8 +23,14 @@ const ListPage = (props) => {
     }
   ]
 
+  const location = useLocation()
   const [todoList, setTodoList] = useState(initTodoList)
-  const [filteredStatus, setFilteredStatus] = useState('all')
+  const [filteredStatus, setFilteredStatus] = useState(() => {
+    const params = queryString.parse(location.search)
+    console.log(params)
+
+    return params.status || 'all'
+  })
 
   const handleTodoClick = (todo, idx) => {
     console.log(todo, idx)
