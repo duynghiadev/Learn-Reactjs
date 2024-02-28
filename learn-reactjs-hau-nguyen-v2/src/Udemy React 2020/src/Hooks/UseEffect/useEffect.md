@@ -46,3 +46,27 @@ Trong video này, mình cùng code với các bạn để chia sẻ một vài �
 - Gọi lại API mỗi khi thay đổi trang thì làm thế nào với useEffect hooks.
 
 Cùng mình xem hết video để giải đáp những thắc mắc trên nhé! ❤️
+
+---
+
+# React hooks: 09 - useEffect search có debounce 😍 (2020)
+
+Chức năng tìm kiếm là một trong những chức năng cần thiết cho bất cứ website nào, vậy mình cài đặt với useEffect hooks như thế nào?
+
+Đây là một video trong chuỗi React hooks của mình.
+
+Trong video này, mình cùng code với các bạn để chia sẻ một vài ý:
+
+- Làm sao đợi user gõ xong mới gọi API
+- Giới thiệu kĩ thuật debounce đơn giản.
+- Giới thiệu react hooks useRef
+- Cài đặt component PostFiltersForm
+
+Cùng mình xem hết video để giải đáp những thắc mắc trên nhé! ❤️
+
+- Trong bài này có học về hook useRef để làm debounce khi search
+
+  - useRef sẽ tạo ra 1 object, và cái object này sẽ được giữ nguyên và không thay đổi giữa những lần render. Từ lúc component được tạo ra (mount) và đến lúc nó mất đi (unmount) thì cái giá trị của cái object này nó không thay đổi
+  - Như vậy nó sẽ giúp mình giữa những lần render và những lần setState thì mình vẫn giữ được cái giá trị của nó (tức là cái current trong hook useRef)
+
+---
