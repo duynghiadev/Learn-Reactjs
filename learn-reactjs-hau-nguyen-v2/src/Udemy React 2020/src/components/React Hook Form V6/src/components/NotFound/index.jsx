@@ -2,16 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-NotFound.propTypes = {
-    
-};
+NotFound.propTypes = {};
 
 function NotFound(props) {
-    return (
-        <div>
-                 Not Found
-        </div>
-    );
+  return <div>Not Found</div>;
 }
 
 export default NotFound;
