@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react'
 import TodoList from '../../components/TodoList/TodoList'
 import { useLocation, useHistory, useRouteMatch } from 'react-router-dom'
 import queryString from 'query-string'
+import TodoForm from '../../components/TodoForm'
 
 const ListPage = (props) => {
   const initTodoList = [
@@ -90,8 +91,15 @@ const ListPage = (props) => {
   })
   console.log(renderedTodoList)
 
+  const handleTodoFormSubmit = (values) => {
+    console.log('Form submit:', values)
+  }
+
   return (
     <div>
+      <h3>What to do</h3>
+      <TodoForm onSubmit={handleTodoFormSubmit} />
+
       <h3>To Do List</h3>
       <TodoList todoList={renderedTodoList} onTodoClick={handleTodoClick} />
 
