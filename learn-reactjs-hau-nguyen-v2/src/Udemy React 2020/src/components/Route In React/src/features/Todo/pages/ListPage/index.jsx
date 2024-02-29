@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types'
-import { useEffect, useMemo, useState } from 'react'
-import TodoList from '../../components/TodoList/TodoList'
-import { useLocation, useHistory, useRouteMatch } from 'react-router-dom'
 import queryString from 'query-string'
+import { useEffect, useMemo, useState } from 'react'
+import { useHistory, useLocation, useRouteMatch } from 'react-router-dom'
 import TodoForm from '../../components/TodoForm'
+import TodoList from '../../components/TodoList/TodoList'
 
 const ListPage = (props) => {
   const initTodoList = [
