@@ -5,8 +5,6 @@ import * as yup from 'yup'
 import InputField from '../../../../components/form-controls/InputField'
 
 const TodoForm = (props) => {
-  const { onSubmit } = props
-
   const schema = yup.object().shape({
     title: yup.string().required('Please enter title').min(5, 'Title is too short')
   })
@@ -19,7 +17,11 @@ const TodoForm = (props) => {
   })
 
   const handleSubmit = (values) => {
-    console.log('TODO FORM:', values)
+    const { onSubmit } = props
+    if (onSubmit) {
+      onSubmit(values)
+    }
+    form.reset()
   }
 
   return (
