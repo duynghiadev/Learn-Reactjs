@@ -1,6 +1,6 @@
-import './style.scss'
-import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import React, { PureComponent } from 'react'
+import './style.scss'
 
 class Countdown1 extends PureComponent {
   constructor(props) {

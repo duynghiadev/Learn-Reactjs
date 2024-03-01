@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Countdown1 from '../Countdown'
 import ColorBox1 from './ColorBox1'
 
 const ColorMain = () => {
@@ -16,9 +17,12 @@ const ColorMain = () => {
   }
 
   return (
-    <div>
-      <ColorBox1 color={color} />
-      <button onClick={handleClickChange}>Change Color</button>
+    <div className='App'>
+      <header className='App-header'>
+        <Countdown1 seconds={30} />
+        <ColorBox1 color={color} />
+        <button onClick={handleClickChange}>Change Color</button>
+      </header>
     </div>
   )
 }

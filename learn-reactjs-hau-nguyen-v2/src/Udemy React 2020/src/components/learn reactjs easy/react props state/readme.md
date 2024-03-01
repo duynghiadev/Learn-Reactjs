@@ -8,16 +8,16 @@ Props
 
 ```js
 function Box(props) {
-  return <div style={{ backgroundColor: props.color }}></div>;
+  return <div style={{ backgroundColor: props.color }}></div>
 }
 
 function App() {
   return (
     <div>
-      <Box color="deeppink" />
-      <Box color="green" />
+      <Box color='deeppink' />
+      <Box color='green' />
     </div>
-  );
+  )
 }
 ```
 

@@ -1,3 +1,3 @@
 ## Một số topic cơ bản của Reactjs:
 
-(https://bit.ly/easy-react)[https://bit.ly/easy-react]
+[Link tutorial](https://s.net.vn/0EI6)
