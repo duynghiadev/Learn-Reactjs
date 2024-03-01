@@ -5,6 +5,8 @@ const objectToArray = (object) => {
 
   return Object.keys(object).reduce((array, key) => {
     array.push({ id: key, value: object[key] })
+    console.log('item:', array[array.length - 1]) // Log the last item in the array
+
     return array
   }, [])
 }
@@ -22,7 +24,12 @@ console.log('----------------------------------------')
 const objectToArray_1 = (object) => {
   if (typeof object !== 'object' || object === null) return []
 
-  return Object.entries(object).map(([id, value]) => ({ id, value }))
+  const array = Object.entries(object).map(([id, value]) => ({ id, value }))
+  array.forEach((item, index) => {
+    console.log(`Item ${index + 1}:`, item)
+  })
+
+  return array
 }
 
 const itemMap_1 = {
