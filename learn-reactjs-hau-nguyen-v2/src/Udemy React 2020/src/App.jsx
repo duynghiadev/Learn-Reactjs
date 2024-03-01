@@ -21,6 +21,7 @@ import Loading from './components/Loading/Loading'
 import AlbumFeature from './features/Album'
 import TodoFeature from './features/Todo'
 import ColorMain from './components/learn reactjs easy/react props state/ColorBox/ColorMain'
+import UseRefMain from './components/learn reactjs easy/UseRef/UseRef'
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path='/reactmemo' element={<ReactMemo />} />
           <Route path='/useref' element={<UseRef />} />
           <Route path='/colorbox1' element={<ColorMain />} />
+          <Route path='/userefmain' element={<UseRefMain />} />
           {/* Add a catch-all route for unmatched paths */}
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>

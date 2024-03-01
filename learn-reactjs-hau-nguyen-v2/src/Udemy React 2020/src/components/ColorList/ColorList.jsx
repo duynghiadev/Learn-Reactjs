@@ -100,6 +100,9 @@ const ColorList = () => {
           <Link className='ColorList__link' to='/colorbox1'>
             Go to Color Box 1
           </Link>
+          <Link className='ColorList__link' to='/userefmain'>
+            Go to useRef hooks Main
+          </Link>
         </div>
       </header>
     </div>

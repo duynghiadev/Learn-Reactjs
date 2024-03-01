@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './UseRef.scss'
 
-const UseRef = () => {
+const UseRefMain = () => {
   // 1
   const [count, setCount] = useState(0)
   const prevCount = useRef(count)
@@ -30,4 +30,4 @@ const UseRef = () => {
   )
 }
 
-export default UseRef
+export default UseRefMain
