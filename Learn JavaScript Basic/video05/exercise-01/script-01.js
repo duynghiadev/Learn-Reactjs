@@ -20,10 +20,6 @@
  * This example demonstrates how the event loop, Web APIs, and the callback queue work together to handle asynchronous operations in JavaScript. Understanding this flow is crucial for building responsive and non-blocking applications.
  */
 
-/**
- * This example demonstrates how the event loop, Web APIs, and the callback queue work together to handle asynchronous operations in JavaScript. Understanding this flow is crucial for building responsive and non-blocking applications.
- */
-
 console.log('Start')
 
 // Asynchronous function using Fetch API
