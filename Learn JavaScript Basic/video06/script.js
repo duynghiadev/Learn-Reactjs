@@ -23,6 +23,7 @@ const counter = (function (initialCount) {
     getValue,
     increase,
     decrease
+    // reset // It must be called in the return for it to be used
   }
 })(100)
 
@@ -32,3 +33,5 @@ console.log(counter.decrease())
 console.log(counter.getValue()) // 101
 console.log(counter.count) // undefined
 counter.reset() // error: counter.reset is not a function
+
+// console.log(counter.getValue()) // reset to initial value --> 100
