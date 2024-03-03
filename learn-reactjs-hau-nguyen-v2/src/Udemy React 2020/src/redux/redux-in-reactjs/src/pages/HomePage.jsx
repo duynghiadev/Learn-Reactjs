@@ -1,7 +1,8 @@
 import React from 'react'
-import { useSelector, useDispatch, shallowEqual } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import HobbyList from '../components/Home/HobbyList'
 import { addNewHobby, setActiveHobby } from '../actions/hobby'
+import './HomePage.css'
 
 HomePage.propTypes = {}
 
@@ -15,11 +16,6 @@ function HomePage(props) {
   const hobbyList = useSelector((state) => state.hobby.list)
   const activeId = useSelector((state) => state.hobby.activeId)
 
-  // const hobbyState = useSelector(state => ({
-  //   list: state.hobby.list,
-  //   activeId: state.hobby.list,
-  // }), shallowEqual);
-
   const dispatch = useDispatch()
 
   console.log('Hobby list: ', hobbyList)
@@ -28,8 +24,6 @@ function HomePage(props) {
     // Random a hobby object: id + title
     const newId = randomNumber()
     const newHobby = {
-      // id: casual.uuid,
-      // title: casual.title,
       id: newId,
       title: `Hobby ${newId}`
     }
