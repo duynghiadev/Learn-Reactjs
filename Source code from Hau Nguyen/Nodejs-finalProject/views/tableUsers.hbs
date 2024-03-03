@@ -1,0 +1,123 @@
+<div id="content">
+
+    <div class="container-fluid">
+        <h1 class="h3 mb-2 text-gray-800">Users Table</h1>
+
+        <div class="d-flex justify-content-center align-items-center w-100">
+            <form class=" form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search mx-5">
+                <div class="input-group w-100">
+                    <input type="text" class="form-control bg-light border-0" placeholder="Search for..."
+                        aria-label="Search" aria-describedby="basic-addon2" name="searchText">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Users Table Example</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>    
+                                <th>Action</th>
+                                <th>Avatar</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Date of birth</th>
+                                <th>Gender</th>
+                                <th>Country</th>
+                                <th>Phone Number</th>
+                                <th>User Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <input id='fileid' type='file' onchange="uploadAvatar(this.files[0]);" accept="image/*" hidden/>
+                            {{#each users }}
+                            <tr>
+                                <td>
+                                    <button class="btn btn-info btn-sm uploadAvatar" id={{_id}}>
+                                        Upload avatar
+                                    </button>
+                                </td>
+                                <td><img src={{avatar}}  width="75" height="75"></td>
+                                <td>{{firstName}}</td>
+                                <td>{{lastName}}</td>
+                                <td>{{dob}}</td>
+                                <td>{{gender}}</td>
+                                <td>{{country}}</td>
+                                <td>{{phoneNumber}}</td>
+                                <td>{{username}}</td>
+                                <td>{{email}}</td>
+                                <td>{{role}}</td>
+
+                            </tr>
+                            {{else}}
+                            <td>No user !</td>
+                            {{/each}}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let id = null
+        const uploadAvatar = async (file) => {
+          const formData = new FormData()
+            formData.append('avatar', file)
+            formData.append('id', id)
+          try {
+            const res = await fetch(`/users/uploadPhoto`, {
+                    method: 'POST',
+                    body: formData
+                });
+            console.log(res)
+            if (res.status === 200) location.reload()
+          } catch (error) {
+            console.log(error)
+          }
+
+        }
+        const form = document.querySelector('form');
+        const uploadButtonList = document.querySelectorAll('.uploadAvatar')
+        for (const button of uploadButtonList) {
+          button.addEventListener('click' , async (e) => {
+          e.preventDefault();
+          id = e.path[0].id
+          let fileUploadElement = document.getElementById('fileid')
+          fileUploadElement.click()
+        })
+        }
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const searchText = form.searchText.value
+            try {
+                const res = await fetch(`/userlist?filter=${JSON.stringify({ keyword: searchText })}`, {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                const data = await res.json();
+                console.log(data)
+
+            } catch (error) {
+                console.log(error)
+            }
+        })
+    </script>
+
+</div>

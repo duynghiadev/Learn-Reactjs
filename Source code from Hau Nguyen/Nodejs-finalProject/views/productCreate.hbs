@@ -1,0 +1,61 @@
+<div class="container">
+
+  <div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card-body p-0">
+      <div class="row">
+        <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+        <div class="col-lg-7">
+          <div class="p-5">
+            <div class="text-center">
+              <h1 class="h4 text-gray-900 mb-4">Product Details</h1>
+            </div>
+            <form class="user" action="/api/createProduct" method="POST">
+              <div class="form-group">
+                <label>Product Name</label>
+                <input class="form-control" id="name" placeholder="Product Name" name="name">
+              </div>
+              <div class="form-group">
+                <label>Product Image</label>
+                <input class="form-control" id="image" placeholder="Product Image" name="image">
+              </div>
+              <div class="form-group">
+                <label>Product Thumbnail</label>
+                <input class="form-control" id="thumbnail" placeholder="Product Thumbnail" name="thumbnail">
+              </div>
+              <div class="form-group">
+                <label>Product Description</label>
+                <textarea class="form-control" id="shortDescription" name="shortDescription"
+                  placeholder="Product Description"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Category ID</label>
+                <input class="form-control" id="categoryId" placeholder="Category ID" name="categoryId">
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+
+                  <label>Sale Price</label>
+                  <input class="form-control" id="salePrice" placeholder="Sale Price" name="salePrice">
+                </div>
+                <div class="col-sm-6">
+                  <label>Original Price</label>
+                  <input class="form-control" id="originalPrice" placeholder="Original Price" name="originalPrice">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Images</label>
+                <textarea class="form-control" id="images" name="images" placeholder="Imagess"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Thumbnails</label>
+                <textarea class="form-control" id="thumbnails" name="thumbnails" placeholder="Thumbnails"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

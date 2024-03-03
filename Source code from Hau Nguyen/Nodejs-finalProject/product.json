@@ -1,0 +1,197 @@
+{
+    "header": {
+      "status": 200,
+      "errorMessage": "",
+      "currentDate": "2018-12-10T13:52:11.340Z",
+      "totalCount": 0
+    },
+    "body": [
+      {
+        "_id": "5bcbf511696b664906832519",
+        "name": "Winter Coat from France",
+        "image": "http://api.demo.nordiccoder.com/images/product_1.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_1.png",
+        "shortDescription": "product 1",
+        "categoryId": "men",
+        "salePrice": 699,
+        "originalPrice": 800,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_1_1.png",
+          "http://api.demo.nordiccoder.com/images/product_1_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_1_1.png",
+          "http://api.demo.nordiccoder.com/images/product_1_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b66490683251a",
+        "name": "Italy Bag",
+        "image": "http://api.demo.nordiccoder.com/images/product_2.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_2.png",
+        "shortDescription": "product 2",
+        "categoryId": "women",
+        "salePrice": 199,
+        "originalPrice": 300,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_2_1.png",
+          "http://api.demo.nordiccoder.com/images/product_2_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_2_1.png",
+          "http://api.demo.nordiccoder.com/images/product_2_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b66490683251b",
+        "name": "Coat from France",
+        "image": "http://api.demo.nordiccoder.com/images/product_3.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_3.png",
+        "shortDescription": "product 3",
+        "categoryId": "accessories",
+        "salePrice": 599,
+        "originalPrice": 800,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_3_1.png",
+          "http://api.demo.nordiccoder.com/images/product_3_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_3_1.png",
+          "http://api.demo.nordiccoder.com/images/product_3_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b66490683251c",
+        "name": "Travel Bag from German",
+        "image": "http://api.demo.nordiccoder.com/images/product_4.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_4.png",
+        "shortDescription": "product 4",
+        "categoryId": "women",
+        "salePrice": 99,
+        "originalPrice": 300,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_4_1.png",
+          "http://api.demo.nordiccoder.com/images/product_4_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_4_1.png",
+          "http://api.demo.nordiccoder.com/images/product_4_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b66490683251d",
+        "name": "Modern Shoe from Japan",
+        "image": "http://api.demo.nordiccoder.com/images/product_5.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_5.png",
+        "shortDescription": "product 5",
+        "categoryId": "men",
+        "salePrice": 199,
+        "originalPrice": 250,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_5_1.png",
+          "http://api.demo.nordiccoder.com/images/product_5_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_5_1.png",
+          "http://api.demo.nordiccoder.com/images/product_5_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b66490683251e",
+        "name": "Italy Glasses",
+        "image": "http://api.demo.nordiccoder.com/images/product_6.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_6.png",
+        "shortDescription": "product 6",
+        "categoryId": "women",
+        "salePrice": 99,
+        "originalPrice": 150,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_6_1.png",
+          "http://api.demo.nordiccoder.com/images/product_6_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_6_1.png",
+          "http://api.demo.nordiccoder.com/images/product_6_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b66490683251f",
+        "name": "France Coat",
+        "image": "http://api.demo.nordiccoder.com/images/product_7.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_7.png",
+        "shortDescription": "product 7",
+        "categoryId": "accessories",
+        "salePrice": 499,
+        "originalPrice": 590,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_7_1.png",
+          "http://api.demo.nordiccoder.com/images/product_7_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_7_1.png",
+          "http://api.demo.nordiccoder.com/images/product_7_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b664906832520",
+        "name": "Wool Pocket",
+        "image": "http://api.demo.nordiccoder.com/images/product_8.png",
+        "thumbnail": 
+        "http://api.demo.nordiccoder.com/images/product_8.png",
+        "shortDescription": "product 8",
+        "categoryId": "accessories",
+        "salePrice": 599,
+        "originalPrice": 700,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_8_1.png",
+          "http://api.demo.nordiccoder.com/images/product_8_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_8_1.png",
+          "http://api.demo.nordiccoder.com/images/product_8_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b664906832521",
+        "name": "Winter Coat from France",
+        "image": "http://api.demo.nordiccoder.com/images/product_1.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_1.png",
+        "shortDescription": "product 1",
+        "categoryId": "men",
+        "salePrice": 699,
+        "originalPrice": 800,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_1_1.png",
+          "http://api.demo.nordiccoder.com/images/product_1_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_1_1.png",
+          "http://api.demo.nordiccoder.com/images/product_1_2.png"
+        ]
+      },
+      {
+        "_id": "5bcbf511696b664906832522",
+        "name": "Italy Bag",
+        "image": "http://api.demo.nordiccoder.com/images/product_2.png",
+        "thumbnail": "http://api.demo.nordiccoder.com/images/product_2.png",
+        "shortDescription": "product 2",
+        "categoryId": "women",
+        "salePrice": 299,
+        "originalPrice": 400,
+        "images": [
+          "http://api.demo.nordiccoder.com/images/product_2_1.png",
+          "http://api.demo.nordiccoder.com/images/product_2_2.png"
+        ],
+        "thumbnails": [
+          "http://api.demo.nordiccoder.com/images/product_2_1.png",
+          "http://api.demo.nordiccoder.com/images/product_2_2.png"
+        ]
+      }
+    ],
+    "pagination": {
+      "limit": 100,
+      "skip": 0,
+      "total": 32
+    }
+  }
+        

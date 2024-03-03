@@ -1,0 +1,94 @@
+<div id="content">
+    <div class="container-fluid">
+        <h1 class="h3 mb-2 text-gray-800">Products Table</h1>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Products Table Example</h6>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="d-flex" id="dataTable_length">
+                            <span class="w-25">Show</span>
+                            <span class="w-75"><select name="data_length" aria-controls="dataTable"
+                                    class="custom-select custom-select-sm form-control form-control-sm">
+                                    <option value="2">2</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div id="dataTable_filter" class="dataTables_filter d-flex"><span class="w-25">Search text:</span>
+                            <input type="search" class="form-control form-control-sm w-75" placeholder=""
+                                aria-controls="dataTable" name="data_keyword">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 d-flex justify-content-center align-items-center my-3">
+                    <button type="submit" class="btn btn-info btn-sm"> Search</button>
+                </div>
+            </form>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Short Description</th>
+                                <th>Category ID</th>
+                                <th>Sale Price</th>
+                                <th>Original Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {{#each products }}
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{shortDescription}}</td>
+                                <td>{{categoryId}}</td>
+                                <td>{{salePrice}} USD</td>
+                                <td>{{originalPrice}} USD</td>
+                                <td>
+                                    <a href="/product/{{_id}}" class="btn btn-info btn-sm">
+                                        <span class="text">Detail</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            {{else}}
+                            <td>No products!</td>
+                            {{/each}}
+
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="/product/create" class="btn btn-info btn-sm">
+                            <span class="text">Create Product</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const form = document.querySelector('form')
+    form.addEventListener('submit', async e => {
+        e.preventDefault()
+        try {
+            const res = await fetch(`/products?filter=${keyword: form.data_keyword.value, dataLength: form.data_length.value}`, {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' }
+            });
+
+            const data = await res.json();
+            console.log(data)
+
+        } catch (error) {
+            console.log(error)
+        }
+    })
+</script>
