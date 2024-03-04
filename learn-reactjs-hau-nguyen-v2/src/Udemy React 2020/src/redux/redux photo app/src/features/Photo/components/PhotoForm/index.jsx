@@ -32,7 +32,11 @@ function PhotoForm(props) {
   })
 
   return (
-    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={props.onSubmit}>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={props.onSubmit}
+    >
       {(formikProps) => {
         // do something here ...
         const { values, errors, touched, isSubmitting } = formikProps
@@ -40,7 +44,12 @@ function PhotoForm(props) {
 
         return (
           <Form>
-            <FastField name='title' component={InputField} label='Title' placeholder='Eg: Wow nature ...' />
+            <FastField
+              name='title'
+              component={InputField}
+              label='Title'
+              placeholder='Eg: Wow nature ...'
+            />
 
             <FastField
               name='categoryId'

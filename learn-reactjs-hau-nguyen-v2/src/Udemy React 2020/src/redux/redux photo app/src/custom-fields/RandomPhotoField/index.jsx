@@ -1,13 +1,12 @@
-import RandomPhoto from '../../components/RandomPhoto'
 import { ErrorMessage } from 'formik'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { FormFeedback, FormGroup, Label } from 'reactstrap'
+import RandomPhoto from '../../components/RandomPhoto'
 
 RandomPhotoField.propTypes = {
   field: PropTypes.object.isRequired,
   form: PropTypes.object.isRequired,
-
   label: PropTypes.string
 }
 
