@@ -1,12 +1,12 @@
-import { PHOTO_CATEGORY_OPTIONS } from '../../../../constants/global'
-import InputField from '../../../../custom-fields/InputField'
-import RandomPhotoField from '../../../../custom-fields/RandomPhotoField'
-import SelectField from '../../../../custom-fields/SelectField'
 import { FastField, Form, Formik } from 'formik'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Button, FormGroup, Spinner } from 'reactstrap'
 import * as Yup from 'yup'
+import { PHOTO_CATEGORY_OPTIONS } from '../../../../constants/global'
+import InputField from '../../../../custom-fields/InputField'
+import RandomPhotoField from '../../../../custom-fields/RandomPhotoField'
+import SelectField from '../../../../custom-fields/SelectField'
 
 PhotoForm.propTypes = {
   onSubmit: PropTypes.func
@@ -31,13 +31,8 @@ function PhotoForm(props) {
     })
   })
 
-  // npm i --save react-select
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={props.onSubmit}
-    >
+    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={props.onSubmit}>
       {(formikProps) => {
         // do something here ...
         const { values, errors, touched, isSubmitting } = formikProps
@@ -45,12 +40,7 @@ function PhotoForm(props) {
 
         return (
           <Form>
-            <FastField
-              name='title'
-              component={InputField}
-              label='Title'
-              placeholder='Eg: Wow nature ...'
-            />
+            <FastField name='title' component={InputField} label='Title' placeholder='Eg: Wow nature ...' />
 
             <FastField
               name='categoryId'
