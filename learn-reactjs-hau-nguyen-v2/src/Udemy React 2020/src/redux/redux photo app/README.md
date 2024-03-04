@@ -115,12 +115,12 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/photos" component={Photo} />
-        <Route path="/user" component={User} />
+        <Route path='/photos' component={Photo} />
+        <Route path='/user' component={User} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
-  );
+  )
 }
 ```
 
@@ -135,22 +135,16 @@ function App() {
 
 ```js
 function InputField(props) {
-  const { field, type, label, placeholder, disabled } = props;
-  const { name } = field;
+  const { field, type, label, placeholder, disabled } = props
+  const { name } = field
 
   return (
     <FormGroup>
       {label && <Label for={name}>{label}</Label>}
 
-      <Input
-        id={name}
-        {...field}
-        type={type}
-        disabled={disabled}
-        placeholder={placeholder}
-      />
+      <Input id={name} {...field} type={type} disabled={disabled} placeholder={placeholder} />
     </FormGroup>
-  );
+  )
 }
 ```
 
