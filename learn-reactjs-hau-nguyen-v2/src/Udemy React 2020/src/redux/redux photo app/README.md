@@ -2,6 +2,23 @@
 
 [Học Redux cở bản 2020](https://tinyurl.com/2zpob73a)
 
+[Deploy on Surge](https://duynghiadev-photo-app.surge.sh/photos)
+
+Khi chúng ta sửa code và muốn deploy lại thì chạy câu lệnh này
+
+```bash
+sh deploy-surge.sh
+```
+
+> Lưu ý: câu lệnh này chỉ chạy được trên `git bash` hoặc `cmd`, nếu chạy trên `powershell` thì không
+> được, mặc dù mình đã config trong file `pagekage.json` (lệnh `deploy`) rồi nhưng vẫn có lỗi
+
+![Run command on git bash 1](image-1.png)
+
+![Run command on git bash 2](image-2.png)
+
+![Error run command](image.png)
+
 # Mục tiêu
 
 Xây dựng một project mini đơn giản để ứng dụng kiến thức phần Redux vào project ReactJS.
