@@ -115,8 +115,14 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/photos' component={Photo} />
-        <Route path='/user' component={User} />
+        <Route
+          path='/photos'
+          component={Photo}
+        />
+        <Route
+          path='/user'
+          component={User}
+        />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
@@ -142,7 +148,13 @@ function InputField(props) {
     <FormGroup>
       {label && <Label for={name}>{label}</Label>}
 
-      <Input id={name} {...field} type={type} disabled={disabled} placeholder={placeholder} />
+      <Input
+        id={name}
+        {...field}
+        type={type}
+        disabled={disabled}
+        placeholder={placeholder}
+      />
     </FormGroup>
   )
 }
@@ -150,8 +162,7 @@ function InputField(props) {
 
 ## Random Photo control
 
-RandomPhoto
-Props
+RandomPhoto Props
 
 - name
 - imageUrl

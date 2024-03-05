@@ -14,8 +14,15 @@ function App() {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Redirect exact from='/' to='/photos' />
-            <Route path='/photos' component={Photo} />
+            <Redirect
+              exact
+              from='/'
+              to='/photos'
+            />
+            <Route
+              path='/photos'
+              component={Photo}
+            />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>

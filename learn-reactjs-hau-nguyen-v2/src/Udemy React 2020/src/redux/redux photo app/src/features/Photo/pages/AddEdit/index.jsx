@@ -24,6 +24,7 @@ function AddEditPage(props) {
     })
     return foundPhoto
   })
+
   console.log({
     photoId,
     editedPhoto
@@ -31,10 +32,10 @@ function AddEditPage(props) {
 
   const initialValues = isAddMode
     ? {
-      title: '',
-      categoryId: null,
-      photo: ''
-    }
+        title: '',
+        categoryId: null,
+        photo: ''
+      }
     : editedPhoto
 
   const handleSubmit = (values) => {
@@ -63,11 +64,15 @@ function AddEditPage(props) {
   }
 
   return (
-    <div className="photo-edit">
-      <Banner title="Pick your amazing photo 😎" />
+    <div className='photo-edit'>
+      <Banner title='Pick your amazing photo 😎' />
 
-      <div className="photo-edit__form">
-        <PhotoForm isAddMode={isAddMode} initialValues={initialValues} onSubmit={handleSubmit} />
+      <div className='photo-edit__form'>
+        <PhotoForm
+          isAddMode={isAddMode}
+          initialValues={initialValues}
+          onSubmit={handleSubmit}
+        />
       </div>
     </div>
   )

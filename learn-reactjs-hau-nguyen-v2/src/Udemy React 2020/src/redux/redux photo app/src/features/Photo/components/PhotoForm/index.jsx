@@ -57,10 +57,17 @@ function PhotoForm(props) {
               options={PHOTO_CATEGORY_OPTIONS}
             />
 
-            <FastField name='photo' component={RandomPhotoField} label='Photo' />
+            <FastField
+              name='photo'
+              component={RandomPhotoField}
+              label='Photo'
+            />
 
             <FormGroup>
-              <Button type='submit' color={isAddMode ? 'primary' : 'success'}>
+              <Button
+                type='submit'
+                color={isAddMode ? 'primary' : 'success'}
+              >
                 {isSubmitting && <Spinner size='sm' />}
                 {isAddMode ? 'Add to album' : 'Update your photo'}
               </Button>

@@ -36,7 +36,10 @@ function RandomPhotoField(props) {
       />
 
       <div className={showError ? 'is-invalid' : ''}></div>
-      <ErrorMessage name={name} component={FormFeedback} />
+      <ErrorMessage
+        name={name}
+        component={FormFeedback}
+      />
     </FormGroup>
   )
 }

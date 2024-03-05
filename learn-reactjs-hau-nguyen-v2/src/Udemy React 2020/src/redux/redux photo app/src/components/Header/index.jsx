@@ -11,13 +11,22 @@ function Header() {
       <Container>
         <Row className='justify-content-between'>
           <Col xs='auto'>
-            <a className='header__link header__title' href='/' rel='noopener noreferrer'>
-              Easy Frontend
+            <a
+              className='header__link header__title'
+              href='/'
+              rel='noopener noreferrer'
+            >
+              Duy Nghia Dev
             </a>
           </Col>
 
           <Col xs='auto'>
-            <NavLink exact className='header__link' to='/sign-in' activeClassName='header__link--active'>
+            <NavLink
+              exact
+              className='header__link'
+              to='/sign-in'
+              activeClassName='header__link--active'
+            >
               Sign In
             </NavLink>
           </Col>

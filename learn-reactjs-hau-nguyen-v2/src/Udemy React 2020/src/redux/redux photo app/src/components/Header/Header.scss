@@ -9,6 +9,7 @@
   &__link {
     color: #000;
     transition: all 0.25s ease-in-out 0s;
+    text-decoration: none;
 
     &--active,
     &:hover {
