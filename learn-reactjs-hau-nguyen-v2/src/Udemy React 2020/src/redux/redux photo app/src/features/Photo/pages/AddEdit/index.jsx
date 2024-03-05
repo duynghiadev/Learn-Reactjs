@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useHistory, useParams } from 'react-router-dom'
 import Banner from '../../../../components/Banner'
 import PhotoForm from '../../../../features/Photo/components/PhotoForm'
-import { addPhoto, updatePhoto } from '../../../../features/Photo/photoSlice'
+import { addPhoto, updatePhoto } from '../../photoSlice.jsx'
 import { randomNumber } from '../../../../utils/common'
 import './styles.scss'
 
@@ -17,17 +17,24 @@ function AddEditPage(props) {
 
   const editedPhoto = useSelector((state) => {
     const foundPhoto = state.photos.find((x) => x.id === +photoId)
-    console.log({ photos: state.photos, photoId, foundPhoto })
+    console.log({
+      photos: state.photos,
+      photoId,
+      foundPhoto
+    })
     return foundPhoto
   })
-  console.log({ photoId, editedPhoto })
+  console.log({
+    photoId,
+    editedPhoto
+  })
 
   const initialValues = isAddMode
     ? {
-        title: '',
-        categoryId: null,
-        photo: ''
-      }
+      title: '',
+      categoryId: null,
+      photo: ''
+    }
     : editedPhoto
 
   const handleSubmit = (values) => {
@@ -56,10 +63,10 @@ function AddEditPage(props) {
   }
 
   return (
-    <div className='photo-edit'>
-      <Banner title='Pick your amazing photo 😎' />
+    <div className="photo-edit">
+      <Banner title="Pick your amazing photo 😎" />
 
-      <div className='photo-edit__form'>
+      <div className="photo-edit__form">
         <PhotoForm isAddMode={isAddMode} initialValues={initialValues} onSubmit={handleSubmit} />
       </div>
     </div>
