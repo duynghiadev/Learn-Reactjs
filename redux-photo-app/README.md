@@ -10,8 +10,7 @@ Khi chúng ta sửa code và muốn deploy lại thì chạy câu lệnh này
 sh deploy-surge.sh
 ```
 
-> Lưu ý: câu lệnh này chỉ chạy được trên `git bash` hoặc `cmd`, nếu chạy trên `powershell` thì không
-> được, mặc dù mình đã config trong file `pagekage.json` (lệnh `deploy`) rồi nhưng vẫn có lỗi
+> Lưu ý: câu lệnh này chỉ chạy được trên `git bash` hoặc `cmd`, nếu chạy trên `powershell` thì không được, mặc dù mình đã config trong file `pagekage.json` (lệnh `deploy`) rồi nhưng vẫn có lỗi
 
 ![Run command on git bash 1](image-1.png)
 

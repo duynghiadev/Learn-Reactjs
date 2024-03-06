@@ -15,6 +15,15 @@ const userSlice = createSlice({
   },
   reducers: {},
   extraReducers: {
+    [getMe.pending]: (state) => {
+      state.loading = true
+    },
+
+    [getMe.rejected]: (state, action) => {
+      state.loading = false
+      state.error = action.error
+    },
+
     [getMe.fulfilled]: (state, action) => {
       state.current = action.payload
     }
