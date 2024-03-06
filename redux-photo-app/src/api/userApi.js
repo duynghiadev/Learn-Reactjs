@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'firebase'
 
 const userApi = {
   getMe: () => {
@@ -9,17 +9,17 @@ const userApi = {
 
       // Wait 500ms --> return result
       setTimeout(() => {
-        const currentUser = firebase.auth().currentUser;
+        const currentUser = firebase.auth().currentUser
 
         resolve({
           id: currentUser.uid,
           name: currentUser.displayName,
           email: currentUser.email,
-          photoUrl: currentUser.photoURL,
+          photoUrl: currentUser.photoURL
         })
-      }, 500);
+      }, 500)
     })
   }
 }
 
-export default userApi;
+export default userApi
