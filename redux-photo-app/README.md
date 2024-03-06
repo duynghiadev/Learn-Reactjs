@@ -18,7 +18,8 @@ sh deploy-surge.sh
 
 ![Error run command](image.png)
 
-Mình đã cấu hình script trong file `package.json` rồi, nên chỉ cần chạy lệnh dưới này là app sẽ tự `build` và `deploy`.
+Mình đã cấu hình script trong file `package.json` rồi, nên chỉ cần chạy lệnh dưới này là app sẽ
+tự `build` và `deploy`.
 
 > Lưu ý: chỉ chạy lệnh này trên `git bash here` thôi, chứ trên `powershell` thì không được nhé!!
 
@@ -88,19 +89,19 @@ Good luck for all of us! 💖
 
 ### 2. Add SCSS support
 
-```js
+```bash
 npm i --save-dev node-sass
 ```
 
 ### 3. Add react router
 
-```
+```bash
 npm i --save react-router-dom
 ```
 
 ### 4. Add UI lib
 
-```
+```bash
 npm i --save reactstrap
 ```
 
