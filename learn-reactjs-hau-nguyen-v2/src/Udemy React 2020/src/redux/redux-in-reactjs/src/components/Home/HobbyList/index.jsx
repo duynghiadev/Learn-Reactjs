@@ -15,7 +15,11 @@ HobbyList.defaultProps = {
 }
 
 function HobbyList(props) {
-  const { hobbyList, activeId, onHobbyClick } = props
+  const {
+    hobbyList,
+    activeId,
+    onHobbyClick
+  } = props
 
   const handleClick = (hobby) => {
     if (onHobbyClick) {
@@ -24,7 +28,7 @@ function HobbyList(props) {
   }
 
   return (
-    <ul className='hobby-list'>
+    <ul className="hobby-list">
       {hobbyList.map((hobby) => (
         <li key={hobby.id} className={hobby.id === activeId ? 'active' : ''} onClick={() => handleClick(hobby)}>
           {hobby.title}
