@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import PropTypes from 'prop-types'
 import TodoList from './components/TodoList/TodoList'
+import { useState } from 'react'
 
 const TodoFeature = (props) => {
   const initTodoList = [

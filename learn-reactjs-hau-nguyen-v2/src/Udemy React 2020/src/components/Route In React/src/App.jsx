@@ -1,10 +1,11 @@
-import { Switch, NavLink, Route, Redirect } from 'react-router-dom'
-import './App.css'
-import TodoFeature from './features/Todo'
-import AlbumFeature from './features/Album'
-import NotFound from './components/NotFound'
 import { useEffect } from 'react'
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom'
+import './App.css'
 import productApi from './api/productApi'
+import Header from './components/Header/index.jsx'
+import NotFound from './components/NotFound'
+import AlbumFeature from './features/Album'
+import TodoFeature from './features/Todo'
 
 function App() {
   useEffect(() => {
@@ -20,20 +21,20 @@ function App() {
   }, [])
 
   return (
-    <div className='App'>
-      Header
+    <div className="App">
+      <Header />
       <p>
-        <NavLink to='/todos'>Todos</NavLink>
+        <NavLink to="/todos">Todos</NavLink>
       </p>
       <p>
-        <NavLink to='/albums'>Albums</NavLink>
+        <NavLink to="/albums">Albums</NavLink>
       </p>
       <Switch>
-        <Redirect from='/home' to='/' exact />
-        <Redirect from='/post-list/:postId' to='/post/:postId' exact />
-        <Route path='/' component={TodoFeature} exact />
-        <Route path='/todos' component={TodoFeature} />
-        <Route path='/albums' component={AlbumFeature} />
+        <Redirect from="/home" to="/" exact />
+        <Redirect from="/post-list/:postId" to="/post/:postId" exact />
+        <Route path="/" component={TodoFeature} exact />
+        <Route path="/todos" component={TodoFeature} />
+        <Route path="/albums" component={AlbumFeature} />
 
         <Route component={NotFound} />
       </Switch>
