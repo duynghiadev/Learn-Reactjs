@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import CounterFeature from './Counter/index.jsx'
 
 function App() {
