@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 import './App.scss'
 import Home from './Home'
 import BetterClock from './Hooks/CustomHooks/BetterClock/components/BetterClock'
@@ -26,35 +26,35 @@ import UseRefMain from './components/learn reactjs easy/UseRef/UseRef'
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <header className='App__header'>
-          <h1 className='App__title'>Hello React Udemy Hau Nguyen 2020</h1>
-          <h2 className='App__subtitle'>Hello, my name is Duy Nghia. Currently, i'm studying ReactJS</h2>
+      <div className="App">
+        <header className="App__header">
+          <h1 className="App__title">Hello React Udemy Hau Nguyen 2020</h1>
+          <h2 className="App__subtitle">Hello, my name is Duy Nghia. Currently, i'm studying ReactJS</h2>
         </header>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/colorlist' element={<ColorList />} />
-          <Route path='/loading' element={<Loading />} />
-          <Route path='/todos' element={<TodoFeature />} />
-          <Route path='/albums' element={<AlbumFeature />} />
-          <Route path='/colorbox' element={<ColorBox />} />
-          <Route path='/counter' element={<Counter />} />
-          <Route path='/homepage' element={<HomePage />} />
-          <Route path='/countdown' element={<CountdownParent />} />
-          <Route path='/result' element={<ResultComponent />} />
-          <Route path='/colorboxver2' element={<ColorBoxVer2 />} />
-          <Route path='/todolist' element={<AllTodo />} />
-          <Route path='/postlist' element={<PostAll />} />
-          <Route path='/clock' element={<ClockMain />} />
-          <Route path='/clockcustomhook' element={<Clock />} />
-          <Route path='/betterclock' element={<BetterClock />} />
-          <Route path='/magicbox' element={<MagicBox />} />
-          <Route path='/reactmemo' element={<ReactMemo />} />
-          <Route path='/useref' element={<UseRef />} />
-          <Route path='/colorbox1' element={<ColorMain />} />
-          <Route path='/userefmain' element={<UseRefMain />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/colorlist" element={<ColorList />} />
+          <Route path="/loading" element={<Loading />} />
+          <Route path="/todos" element={<TodoFeature />} />
+          <Route path="/albums" element={<AlbumFeature />} />
+          <Route path="/colorbox" element={<ColorBox />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/homepage" element={<HomePage />} />
+          <Route path="/countdown" element={<CountdownParent />} />
+          <Route path="/result" element={<ResultComponent />} />
+          <Route path="/colorboxver2" element={<ColorBoxVer2 />} />
+          <Route path="/todolist" element={<AllTodo />} />
+          <Route path="/postlist" element={<PostAll />} />
+          <Route path="/clock" element={<ClockMain />} />
+          <Route path="/clockcustomhook" element={<Clock />} />
+          <Route path="/betterclock" element={<BetterClock />} />
+          <Route path="/magicbox" element={<MagicBox />} />
+          <Route path="/reactmemo" element={<ReactMemo />} />
+          <Route path="/useref" element={<UseRef />} />
+          <Route path="/colorbox1" element={<ColorMain />} />
+          <Route path="/userefmain" element={<UseRefMain />} />
           {/* Add a catch-all route for unmatched paths */}
-          <Route path='*' element={<Navigate to='/' />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
