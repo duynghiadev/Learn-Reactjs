@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { NavLink, Redirect, Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 import './App.css'
 import productApi from './api/productApi'
 import Header from './components/Header/index.jsx'
@@ -23,12 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <p>
-        <NavLink to="/todos">Todos</NavLink>
-      </p>
-      <p>
-        <NavLink to="/albums">Albums</NavLink>
-      </p>
+
       <Switch>
         <Redirect from="/home" to="/" exact />
         <Redirect from="/post-list/:postId" to="/post/:postId" exact />
