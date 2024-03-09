@@ -30,13 +30,21 @@ const useStyles = makeStyles((theme) => ({
 const RegisterForm = (props) => {
   const classes = useStyles()
 
-  const schema = yup.object().shape({
-    fullName: yup.string().required('Please enter your name.').test('Should has at least two words',
-      'Please enter at least two words.', (value) => {
-        console.log('value', value)
-        return value.split(' ').length >= 2
-      })
-  })
+  const schema = yup.object()
+    .shape({
+      fullName: yup
+        .string()
+        .required('Please enter your name.')
+        .test('Should has at least two words', 'Please enter at least two words.',
+          (value) => {
+            console.log('value', value)
+            return value.split(' ').length >= 2
+          }),
+
+      email: yup.string()
+        .required('Please enter your email.')
+        .email('Please enter your email address')
+    })
 
   const form = useForm({
     defaultValues: {
