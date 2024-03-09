@@ -32,8 +32,7 @@ const RegisterForm = (props) => {
 
   const schema = yup.object()
     .shape({
-      fullName: yup
-        .string()
+      fullName: yup.string()
         .required('Please enter your name.')
         .test('Should has at least two words', 'Please enter at least two words.',
           (value) => {
@@ -47,7 +46,11 @@ const RegisterForm = (props) => {
 
       password: yup.string()
         .required('Please enter your password')
-        .min(6, 'Please enter at least 6 character')
+        .min(6, 'Please enter at least 6 character'),
+
+      retypePassword: yup.string()
+        .required('Please retype your password.')
+        .oneOf([yup.ref('password')], 'Password does not match')
     })
 
 
