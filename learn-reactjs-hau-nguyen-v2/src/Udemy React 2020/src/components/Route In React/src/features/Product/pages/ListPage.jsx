@@ -1,11 +1,11 @@
 import { Box, Container, Grid, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
 import { useEffect, useState } from 'react'
 import productApi from '../../../api/productApi.jsx'
+import ProductList from '../components/ProductList.jsx'
 import ProductSkeletonList from '../components/ProductSkeletonList.jsx'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {},
 
   left: {
@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   },
 
   right: {
-    flex: '1 1 auto'
+    flex: '1 1 0'
   }
 }))
 
@@ -23,7 +23,7 @@ function ListPage(props) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    (async () => {
+    ;(async () => {
       try {
         const { data } = await productApi.getAll({ _page: 1, _limit: 10 })
         setProductList(data)
@@ -40,14 +40,12 @@ function ListPage(props) {
       <Container>
         <Grid container spacing={1}>
           <Grid item className={classes.left}>
-            <Paper elevation={0}>
-              Left column
-            </Paper>
+            <Paper elevation={0}>Left column</Paper>
           </Grid>
 
           <Grid item className={classes.right}>
             <Paper elevation={0}>
-              {loading ? <ProductSkeletonList /> : <Typography>Product List</Typography>}
+              {loading ? <ProductSkeletonList /> : <ProductList data={productList} />}
             </Paper>
           </Grid>
         </Grid>
