@@ -35,7 +35,15 @@ const uerSlice = createSlice({
     current: JSON.parse(localStorage.getItem(StorageKeys.USER)) || {},
     settings: {}
   },
-  reducers: {},
+  reducers: {
+    logout(state, action) {
+      // clear local storage
+      localStorage.removeItem(StorageKeys.USER)
+      localStorage.removeItem(StorageKeys.TOKEN)
+
+      state.current = {}
+    }
+  },
   extraReducers: {
     [register.fulfilled]: (state, action) => {
       state.current = action.payload
@@ -47,5 +55,6 @@ const uerSlice = createSlice({
   }
 })
 
-const { reducer } = uerSlice
+const { actions, reducer } = uerSlice
+export const { logout } = actions
 export default reducer
