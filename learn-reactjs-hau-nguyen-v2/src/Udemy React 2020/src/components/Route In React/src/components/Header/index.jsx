@@ -10,7 +10,7 @@ import { Close } from '@material-ui/icons'
 import CodeIcon from '@material-ui/icons/Code'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import Register from '../../features/Auth/component/Register/index.jsx'
+import Login from '../../features/Auth/component/Login/index.jsx'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -83,7 +83,8 @@ export default function Header() {
         </IconButton>
 
         <DialogContent>
-          <Register closeDialog={handleClose} />
+          {/*<Register closeDialog={handleClose} />*/}
+          <Login closeDialog={handleClose} />
         </DialogContent>
       </Dialog>
     </div>
