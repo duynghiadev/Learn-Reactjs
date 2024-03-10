@@ -28,6 +28,7 @@ const Register = (props) => {
       enqueueSnackbar('Register successfully 🎉', { variant: 'success' })
     } catch (error) {
       console.log('Failed to register:', error)
+      enqueueSnackbar(error.message, { variant: 'error' })
     }
   }
 
