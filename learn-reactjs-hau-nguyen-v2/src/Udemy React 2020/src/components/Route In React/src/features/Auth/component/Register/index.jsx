@@ -1,10 +1,13 @@
 import { unwrapResult } from '@reduxjs/toolkit'
+import { useSnackbar } from 'notistack'
+import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
 import { register } from '../../userSlice.js'
 import RegisterForm from '../RegisterForm/index.jsx'
 
 const Register = (props) => {
   const dispatch = useDispatch()
+  const { enqueueSnackbar } = useSnackbar()
 
   const handleSubmit = async (values) => {
     try {
@@ -14,10 +17,15 @@ const Register = (props) => {
       console.log('Form Submit:', values)
       const action = register(values)
       const resultAction = await dispatch(action)
-      const user = unwrapResult(resultAction)
+      unwrapResult(resultAction)
 
-      // do something here on register successfully
-      console.log('new user:', user)
+      // close dialog
+      const { closeDialog } = props
+      if (closeDialog) {
+        closeDialog()
+      }
+
+      enqueueSnackbar('Register successfully 🎉', { variant: 'success' })
     } catch (error) {
       console.log('Failed to register:', error)
     }
@@ -28,6 +36,10 @@ const Register = (props) => {
       <RegisterForm onSubmit={handleSubmit} />
     </div>
   )
+}
+
+Register.propTypes = {
+  closeDialog: PropTypes.func
 }
 
 export default Register
