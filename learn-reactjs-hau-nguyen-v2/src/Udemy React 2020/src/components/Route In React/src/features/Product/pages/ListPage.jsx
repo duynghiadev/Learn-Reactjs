@@ -1,5 +1,7 @@
 import { Box, Container, Grid, Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import { useEffect } from 'react'
+import productApi from '../../../api/productApi.jsx'
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -16,6 +18,13 @@ const useStyles = makeStyles(theme => ({
 function ListPage(props) {
   const classes = useStyles()
 
+  useEffect(() => {
+    (async () => {
+      const response = await productApi.getAll({ _page: 1, _limit: 10 })
+      console.log({ response })
+    })()
+  }, [])
+
   return (
     <Box>
       <Container>
@@ -25,7 +34,7 @@ function ListPage(props) {
               Left column
             </Paper>
           </Grid>
-          
+
           <Grid item className={classes.right}>
             <Paper elevation={0}>
               Right column
