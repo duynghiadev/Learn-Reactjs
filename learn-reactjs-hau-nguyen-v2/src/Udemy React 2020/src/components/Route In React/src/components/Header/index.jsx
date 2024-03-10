@@ -1,3 +1,4 @@
+import { Box } from '@material-ui/core'
 import AppBar from '@material-ui/core/AppBar'
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
@@ -11,6 +12,7 @@ import CodeIcon from '@material-ui/icons/Code'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Login from '../../features/Auth/component/Login/index.jsx'
+import Register from '../../features/Auth/component/Register/index.jsx'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,8 +37,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
+const MODE = {
+  LOGIN: 'login',
+  REGISTER: 'register'
+}
+
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [mode, setMode] = useState(MODE.LOGIN)
 
   const handleClickOpen = () => {
     setOpen(true)
@@ -83,8 +91,29 @@ export default function Header() {
         </IconButton>
 
         <DialogContent>
-          {/*<Register closeDialog={handleClose} />*/}
-          <Login closeDialog={handleClose} />
+          {mode === MODE.REGISTER && (
+            <>
+              <Register closeDialog={handleClose} />
+
+              <Box textAlign="center">
+                <Button color="primary" onClick={() => setMode(MODE.LOGIN)}>
+                  Already have an account. Login here
+                </Button>
+              </Box>
+            </>
+          )}
+
+          {mode === MODE.LOGIN && (
+            <>
+              <Login closeDialog={handleClose} />
+
+              <Box textAlign="center">
+                <Button color="primary" onClick={() => setMode(MODE.REGISTER)}>
+                  Don't have an account. Register here
+                </Button>
+              </Box>
+            </>
+          )}
         </DialogContent>
       </Dialog>
     </div>
