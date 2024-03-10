@@ -5,6 +5,7 @@ import productApi from './api/productApi'
 import Header from './components/Header/index.jsx'
 import NotFound from './components/NotFound'
 import AlbumFeature from './features/Album'
+import ProductFeature from './features/Product/index.jsx'
 import TodoFeature from './features/Todo'
 
 function App() {
@@ -30,10 +31,10 @@ function App() {
         <Route path="/" component={TodoFeature} exact />
         <Route path="/todos" component={TodoFeature} />
         <Route path="/albums" component={AlbumFeature} />
+        <Route path="/products" component={ProductFeature} />
 
         <Route component={NotFound} />
       </Switch>
-      Footer
     </div>
   )
 }
