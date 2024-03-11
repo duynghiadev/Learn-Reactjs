@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Box, Container, Grid, makeStyles, Paper } from '@material-ui/core';
-import ThumbnailProduct from '../components/ThumbnailProduct';
+import React from 'react';
 import { useRouteMatch } from 'react-router';
-import useProductDetail from '../hooks/useProductDetail';
 import ProductDetail from '../components/ProductDetail';
+import ThumbnailProduct from '../components/ThumbnailProduct';
+import useProductDetail from '../hooks/useProductDetail';
 
 const useStyles = makeStyles((theme) => ({
   root: {},

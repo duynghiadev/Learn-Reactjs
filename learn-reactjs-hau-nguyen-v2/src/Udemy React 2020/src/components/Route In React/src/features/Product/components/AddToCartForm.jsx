@@ -3,11 +3,15 @@ import { Button } from '@material-ui/core'
 import PropTypes from 'prop-types'
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
-import InputField from '../../../components/form-controls/InputField'
+import QuantityField from '../../../components/form-controls/QuantityField'
 
 const AddToCartForm = ({ onSubmit = null }) => {
   const schema = yup.object().shape({
-    quantity: yup.number().required('Please enter quantity').min(1, 'Please enter at least 1')
+    quantity: yup
+      .number()
+      .required('Please enter quantity')
+      .min(1, 'Minimum value is 1')
+      .typeError('Please enter a number')
   })
 
   const form = useForm({
@@ -25,10 +29,16 @@ const AddToCartForm = ({ onSubmit = null }) => {
 
   return (
     <form onSubmit={form.handleSubmit(handleSubmit)}>
-      <InputField name='quantity' label='Quantity' form={form} />
+      <QuantityField name='quantity' label='Quantity' form={form} />
 
-      <Button type='submit' variant='contained' color='primary' fullWidth size='large'>
-        Buy
+      <Button
+        type='submit'
+        variant='contained'
+        color='primary'
+        style={{ width: '250px' }}
+        size='large'
+      >
+        Add To Cart
       </Button>
     </form>
   )

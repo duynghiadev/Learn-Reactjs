@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types'
 import './style.scss'
 
 const Loading = () => {
   return (
     <div>
-      <h1>Loading</h1>
+      <h1>ok</h1>
     </div>
   )
 }
