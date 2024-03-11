@@ -1,8 +1,8 @@
 import { yupResolver } from '@hookform/resolvers/yup'
 import { Avatar, LinearProgress } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
-import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
+import { makeStyles } from '@material-ui/core/styles'
 import { LockOutlined } from '@material-ui/icons'
 import PropTypes from 'prop-types'
 import { useForm } from 'react-hook-form'
@@ -41,15 +41,14 @@ const useStyles = makeStyles((theme) => ({
 const LoginForm = (props) => {
   const classes = useStyles()
 
-  const schema = yup.object()
-    .shape({
-      identifier: yup.string()
-        .required('Please enter your email.')
-        .email('Please enter your email address'),
+  const schema = yup.object().shape({
+    identifier: yup
+      .string()
+      .required('Please enter your email.')
+      .email('Please enter your email address'),
 
-      password: yup.string()
-        .required('Please enter your password')
-    })
+    password: yup.string().required('Please enter your password')
+  })
 
   const form = useForm({
     defaultValues: {
@@ -76,21 +75,21 @@ const LoginForm = (props) => {
         <LockOutlined></LockOutlined>
       </Avatar>
 
-      <Typography className={classes.title} component="h3" variant="h5">
+      <Typography className={classes.title} component='h3' variant='h5'>
         Sign In
       </Typography>
 
       <form onSubmit={form.handleSubmit(handleSubmit)}>
-        <InputField name="identifier" label="Email" form={form} />
-        <PasswordField name="password" label="Password" form={form} />
+        <InputField name='identifier' label='Email' form={form} />
+        <PasswordField name='password' label='Password' form={form} />
 
         <Button
-          type="submit"
+          type='submit'
           className={classes.submit}
-          variant="contained"
-          color="primary"
+          variant='contained'
+          color='primary'
           fullWidth
-          size="large"
+          size='large'
         >
           Sign in
         </Button>
