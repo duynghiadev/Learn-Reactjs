@@ -2,6 +2,7 @@ import { Box } from '@material-ui/core'
 import PropTypes from 'prop-types'
 import FilterByCategory from './Filters/FilterByCategory'
 import FilterByPrice from './Filters/FilterByPrice'
+import FilterByService from './Filters/FilterByService'
 
 const ProductFilters = ({ filters, onChange }) => {
   const handleCategoryChange = (newCategoryId) => {
@@ -13,7 +14,7 @@ const ProductFilters = ({ filters, onChange }) => {
     onChange(newFilters)
   }
 
-  const handleByChange = (values) => {
+  const handleChange = (values) => {
     console.log(values)
     if (onChange) onChange(values)
   }
@@ -21,7 +22,8 @@ const ProductFilters = ({ filters, onChange }) => {
   return (
     <Box>
       <FilterByCategory onChange={handleCategoryChange} />
-      <FilterByPrice onChange={handleByChange} />
+      <FilterByPrice onChange={handleChange} />
+      <FilterByService filters={filters} onChange={handleChange} />
     </Box>
   )
 }
