@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Pagination } from '@material-ui/lab'
 import { useEffect, useState } from 'react'
 import productApi from '../../../api/productApi.jsx'
+import FilterViewer from '../components/FilterViewer.jsx'
 import ProductFilters from '../components/ProductFilters.jsx'
 import ProductList from '../components/ProductList.jsx'
 import ProductSkeletonList from '../components/ProductSkeletonList.jsx'
@@ -80,6 +81,10 @@ function ListPage(props) {
     console.log('newFilters:', newFilters)
   }
 
+  const setNewFilters = (newFilters) => {
+    setFilters(newFilters)
+  }
+
   return (
     <Box>
       <Container>
@@ -93,6 +98,7 @@ function ListPage(props) {
           <Grid item className={classes.right}>
             <Paper elevation={0}>
               <ProductSort currentSort={filters._sort} onChange={handleSortChange} />
+              <FilterViewer filters={filters} onChange={setNewFilters} />
               {loading ? <ProductSkeletonList length={9} /> : <ProductList data={productList} />}
 
               <Box className={classes.pagination}>
