@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Paper, makeStyles } from '@material-ui/core'
 import { useRouteMatch } from 'react-router-dom'
+import ProductInfo from '../components/ProductInfo'
 import ProductThumbnail from '../components/ProductThumbnail'
 import useProductDetail from '../hooks/useProductDetail'
 
@@ -41,7 +42,7 @@ const DetailPage = () => {
             </Grid>
 
             <Grid item className={classes.right}>
-              Product Info
+              <ProductInfo product={product} />
             </Grid>
           </Grid>
         </Paper>
