@@ -1,5 +1,10 @@
+import { useSelector } from 'react-redux'
+import { cartTotalSelector } from './selectors'
+
 const CartFeature = () => {
-  return <div>Cart Feature</div>
+  const cartTotal = useSelector(cartTotalSelector)
+
+  return <div>Cart Feature: {cartTotal}</div>
 }
 
 export default CartFeature
