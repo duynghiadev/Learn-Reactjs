@@ -2,6 +2,7 @@ import { Box, Container, Grid, Paper, makeStyles } from '@material-ui/core'
 import { useRouteMatch } from 'react-router-dom'
 import AddToCartForm from '../components/AddToCartForm'
 import ProductInfo from '../components/ProductInfo'
+import ProductMenu from '../components/ProductMenu'
 import ProductThumbnail from '../components/ProductThumbnail'
 import useProductDetail from '../hooks/useProductDetail'
 
@@ -52,6 +53,8 @@ const DetailPage = () => {
             </Grid>
           </Grid>
         </Paper>
+
+        <ProductMenu />
       </Container>
     </Box>
   )
