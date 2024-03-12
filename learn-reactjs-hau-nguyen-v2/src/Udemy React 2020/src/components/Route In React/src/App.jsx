@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/index.jsx'
 import NotFound from './components/NotFound'
 import AlbumFeature from './features/Album'
+import CartFeature from './features/Cart/index.jsx'
 import ProductFeature from './features/Product/index.jsx'
 import TodoFeature from './features/Todo'
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/todos' component={TodoFeature} />
         <Route path='/albums' component={AlbumFeature} />
         <Route path='/products' component={ProductFeature} />
+        <Route path='/cart' component={CartFeature} />
 
         <Route component={NotFound} />
       </Switch>
