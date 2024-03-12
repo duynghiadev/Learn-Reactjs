@@ -68,13 +68,17 @@ const ProductAdditional = () => {
           <Card key={product.id} className={classes.card}>
             <CardContent>
               <Typography variant='h5' component='h2'>
-                {product.name}
+                <b>Product:</b> {product.name}
               </Typography>
               <Typography variant='subtitle1' color='textSecondary'>
-                Price: {product.originalPrice}
+                <b>Price:</b> {product.originalPrice}💲
               </Typography>
               <Typography variant='body2' component='div'>
-                Description:{' '}
+                <p>
+                  <b>Description:</b> {product.shortDescription}
+                </p>
+                <br />
+                <b>Promotion Price: {product.promotionPercent}%</b>
                 <div
                   dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(product.description) }}
                 />
