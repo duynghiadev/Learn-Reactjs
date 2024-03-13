@@ -34,7 +34,8 @@ const studentList = [
   { id: 2, name: 'Bob', gender: 'male', age: 20 },
 ]
 
-const bob = findStudentById(studentList, 3)
+// const bob = findStudentById(studentList, 3)
+const bob = findStudentById(studentList, 1)
 
 // console.log(bob.name) // error here ❌
 
@@ -43,7 +44,7 @@ const bob = findStudentById(studentList, 3)
 
 // FIX: do check before using ✅
 if (bob) {
-  console.log(`${bob.name}, ${bob.gender}, ${bob.age}`)
+  console.log(`This is student: ${bob.name}, ${bob.gender}, ${bob.age}`)
 } else {
   console.log('Student undefined')
 }
