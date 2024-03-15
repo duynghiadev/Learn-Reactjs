@@ -29,7 +29,7 @@ enum Status4 {
 // can assign any number to your enum variable
 const stats1: Status4 = Status4.PENDING
 const stats2: Status4 = 1
-const stats3: Status4 = -1
+// const stats3: Status4 = -1
 
 // number enum --> support reverse mapping
 console.log('Number enum 🚀', Status4[0]) // 'PENDING'
