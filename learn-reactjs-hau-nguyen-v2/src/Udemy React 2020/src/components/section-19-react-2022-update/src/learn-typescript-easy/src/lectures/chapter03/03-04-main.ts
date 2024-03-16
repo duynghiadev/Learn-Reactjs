@@ -3,28 +3,28 @@ enum Status1 {
   PENDING, // 0
   IN_PROGRESS, // 1
   DONE, // 2
-  CANCELLED, // 3
+  CANCELLED // 3
 }
 
 enum Status2 {
   PENDING = 3, // 3
   IN_PROGRESS, // 4
   DONE, // 5
-  CANCELLED, // 6
+  CANCELLED // 6
 }
 
 enum Status3 {
   PENDING = 3,
   IN_PROGRESS = 5,
   DONE = 8,
-  CANCELLED = 10,
+  CANCELLED = 10
 }
 
 enum Status4 {
   PENDING, // 0
   IN_PROGRESS, // 1
   DONE, // 2
-  CANCELLED, // 3
+  CANCELLED // 3
 }
 // can assign any number to your enum variable
 const stats1: Status4 = Status4.PENDING
@@ -39,12 +39,12 @@ console.log('Number enum 🚀', Status4['DONE']) // 2
 
 enum MediaTypes {
   JSON = 'application/json',
-  XML = 'application/xml',
+  XML = 'application/xml'
 }
 fetch('https://example.com/api/endpoint', {
   headers: {
-    Accept: MediaTypes.JSON,
-  },
+    Accept: MediaTypes.JSON
+  }
 }).then((response) => {
   // ...
 })
@@ -55,7 +55,7 @@ enum Status5 {
   PENDING, // 0
   IN_PROGRESS, // 1
   DONE, // 2
-  CANCELLED, // 3
+  CANCELLED // 3
 }
 // compiled to javascript 👇
 // ;('use strict')
@@ -71,7 +71,7 @@ enum Status5 {
 
 enum MediaTypes {
   JSON1 = 'application/json',
-  XML1 = 'application/xml',
+  XML1 = 'application/xml'
 }
 // compiled to javascript 👇
 // ;('use strict')

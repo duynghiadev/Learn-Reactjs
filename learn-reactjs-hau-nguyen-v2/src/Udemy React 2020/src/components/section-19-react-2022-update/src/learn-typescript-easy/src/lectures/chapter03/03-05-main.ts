@@ -8,7 +8,7 @@ const wordList: Array<string> = ['easy', 'frontend']
 
 const studentList2: Array<Student5> = [
   { id: 1, name: 'Alice' },
-  { id: 2, name: 'Bob' },
+  { id: 2, name: 'Bob' }
 ]
 
 console.log('Array 🚀', studentList2)
@@ -23,7 +23,7 @@ const wordList1: List<string> = ['easy', 'frontend']
 
 const studentList3: List<Student5> = [
   { id: 1, name: 'easy' },
-  { id: 2, name: 'frontend' },
+  { id: 2, name: 'frontend' }
 ]
 
 console.log('List 🚀', studentList2)
