@@ -1,4 +1,4 @@
-import { Student } from '../../components/models'
+import { Student } from '@/components/models'
 
 export interface StudentCardProps {
   student: Student
