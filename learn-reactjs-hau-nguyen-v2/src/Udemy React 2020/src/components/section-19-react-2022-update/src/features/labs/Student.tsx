@@ -1,17 +1,12 @@
-export interface StudentProps {
-  name?: string
-  age: number
-  isHero: boolean
-  hobbyList: string[]
-  sayHello: () => void
+import { Student } from '../../components/models'
+
+export interface StudentCardProps {
+  student: Student
 }
 
-export default function Student({
-  name = 'Default Name',
-  isHero = false,
-  hobbyList,
-  age
-}: StudentProps) {
+export function StudentCard({ student }: StudentCardProps) {
+  const { name, isHero, age, hobbyList } = student
+
   return (
     <div>
       <p>Student: {name}</p>
