@@ -1,4 +1,5 @@
 import { MainLayout } from '@/components/Layout'
+import { Widget } from '@/components/common'
 import MyText from '@/features/labs/MyText'
 import './App.css'
 import { Student } from './components/models'
@@ -41,6 +42,23 @@ const App = () => {
         <span>easy</span>
         <span>frontend</span>
       </MyText>
+
+      <div>
+        <div>
+          <Widget title='Earning Overview'>Chart 1</Widget>
+        </div>
+        <div>
+          <Widget title='Revenue Sources'>
+            <div>Chart 2</div>
+          </Widget>
+        </div>
+        <div>
+          <Widget title='Earning Overview'>Chart 3</Widget>
+        </div>
+        <div>
+          <Widget title='Earning Overview'>Chart 4</Widget>
+        </div>
+      </div>
     </div>
   )
 }
