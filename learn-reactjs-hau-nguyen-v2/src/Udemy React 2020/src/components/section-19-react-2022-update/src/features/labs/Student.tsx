@@ -1,9 +1,16 @@
-export interface StudentProps {}
+import { Student } from '../../App'
 
-export default function Student(props: StudentProps) {
+interface StudentProps {
+  student: Student
+}
+
+export default function Student({ student }: StudentProps) {
   return (
     <div>
-      <h2>This is labs Student</h2>
+      <p>Name: {student.name}</p>
+      <p>Age: {student.age}</p>
+      <p>Gender: {student.gender}</p>
+      {student.address && <p>Address: {student.address}</p>}
     </div>
   )
 }
