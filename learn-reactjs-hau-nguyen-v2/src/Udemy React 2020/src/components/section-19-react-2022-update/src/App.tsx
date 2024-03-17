@@ -1,11 +1,20 @@
 import { MainLayout } from '@/components/Layout'
 import { Widget } from '@/components/common'
 import MyText from '@/features/labs/MyText'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Student } from './components/models'
 import { StudentCard } from './features/labs/Student'
 
 const App = () => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+
   const john: Student = {
     name: 'John',
     age: 22,
@@ -19,6 +28,18 @@ const App = () => {
 
   return (
     <div>
+      {loading && <p>Loading...</p>}
+      {loading ? <p>Loading...</p> : <p>data ready!</p>}
+
+      <p>{loading ? 'loading...' : 'data ready...'}</p>
+
+      {true && 'show true'}
+      {false && 'show false'}
+      {'' && 'show empty'}
+      {'0' && 'show zero string'}
+      {[].length > 0 && 'show zero'}
+      {Boolean(NaN) && 'show NaN'}
+
       <MainLayout>
         <StudentCard student={john} onClick={handleStudentClick} />
       </MainLayout>
