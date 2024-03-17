@@ -1,10 +1,6 @@
-import { MainLayout } from '@/components/Layout'
-import { Widget } from '@/components/common'
-import MyText from '@/features/labs/MyText'
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import './App.css'
 import { Student } from './components/models'
-import { StudentCard } from './features/labs/Student'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -26,9 +22,33 @@ const App = () => {
     console.log('student click:', student)
   }
 
+  // server
+  const studentList = [
+    { id: 1, name: 'easy' },
+    { id: 2, name: 'frontend' }
+  ]
+
+  // client
+  const statusList = ['pending', 'active']
+
   return (
     <div>
-      {loading && <p>Loading...</p>}
+      <ul>
+        {studentList.map((student) => (
+          <Fragment>
+            <li key={student.id}>{student.name}</li>
+            <li key={student.id}>{student.name}</li>
+          </Fragment>
+        ))}
+      </ul>
+
+      <ul>
+        {statusList.map((status, idx) => (
+          <li key={idx}>{status}</li>
+        ))}
+      </ul>
+
+      {/* {loading && <p>Loading...</p>}
       {loading ? <p>Loading...</p> : <p>data ready!</p>}
 
       <p>{loading ? 'loading...' : 'data ready...'}</p>
@@ -79,7 +99,7 @@ const App = () => {
         <div>
           <Widget title='Earning Overview'>Chart 4</Widget>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
