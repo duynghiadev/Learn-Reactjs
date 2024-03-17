@@ -1,9 +1,11 @@
 import './App.css'
+import { Footer, Header } from './components/common'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello ReactJS and TypeScript</h1>
+      <Header></Header>
+      <Footer></Footer>
     </div>
   )
 }
