@@ -1,6 +1,6 @@
+import { MainLayout } from '@/components/Layout'
 import MyText from '@/features/labs/MyText'
 import './App.css'
-import { Footer, Header } from './components/common'
 import { Student } from './components/models'
 import { StudentCard } from './features/labs/Student'
 
@@ -18,9 +18,9 @@ const App = () => {
 
   return (
     <div>
-      <Header></Header>
-      <StudentCard student={john} onClick={handleStudentClick} />
-      <Footer></Footer>
+      <MainLayout>
+        <StudentCard student={john} onClick={handleStudentClick} />
+      </MainLayout>
 
       <MyText></MyText>
       <MyText>easy frontend</MyText>
