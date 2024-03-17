@@ -9,3 +9,4 @@ File Name Convention
 > In this project contains:
 
 - Section 19: Hành trình mới - React 2022 updates
+- Section 20: ReactJS typescript cơ bản
