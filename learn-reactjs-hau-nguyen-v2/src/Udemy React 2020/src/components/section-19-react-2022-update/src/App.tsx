@@ -1,3 +1,4 @@
+import FilterableList from '@/198. Filter List/FilterListList'
 import { useState } from 'react'
 import './App.css'
 
@@ -27,8 +28,10 @@ const App = () => {
     <div>
       <p>Count: {count}</p>
       <button onClick={handleIncreaseClick}>Increase count</button>
-
       {showMore && <p>{name}</p>}
+      <br />
+      <br /> <hr /> <br />
+      <FilterableList />
     </div>
   )
 }
