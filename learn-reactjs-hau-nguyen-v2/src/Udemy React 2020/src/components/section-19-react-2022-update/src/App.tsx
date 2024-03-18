@@ -1,11 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 
+let run = 0
+function calculateCount() {
+  run += 5
+  console.log('calc count:', run)
+  return 10
+}
+
 const App = () => {
   let i = 0
 
   const [showMore, setShowMore] = useState(false)
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(calculateCount)
   const [name, setName] = useState('')
 
   const handleIncreaseClick = () => {
