@@ -1,4 +1,7 @@
 import FilterableList from '@/198. Filter List/FilterListList'
+import Preserving from '@/199. Preserving State/component01/Preverving'
+import ShowCounterPreserving from '@/199. Preserving State/component02/ShowCounterPreserving'
+import ShowCounterPreserving2 from '@/199. Preserving State/component03/ShowCounterPreserving2'
 import { useState } from 'react'
 import './App.css'
 
@@ -32,6 +35,11 @@ const App = () => {
       <br />
       <br /> <hr /> <br />
       <FilterableList />
+      <br />
+      <br /> <hr /> <br />
+      <Preserving />
+      <ShowCounterPreserving />
+      <ShowCounterPreserving2 />
     </div>
   )
 }
