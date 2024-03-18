@@ -5,6 +5,7 @@ import ShowCounterPreserving2 from '@/199. Preserving State/component03/ShowCoun
 import Scoreboard from '@/200. Resetting State/component01/ScoreBoard'
 import Scoreboard2 from '@/200. Resetting State/component02/ScoreBoard2'
 import { DisappearingInput } from '@/201. Disappearing Input Text/DisappearingInput'
+import SwapTwoForm from '@/202. Swap Two Form/SwapTwoForm'
 import { useState } from 'react'
 import './App.css'
 
@@ -46,6 +47,7 @@ const App = () => {
       <Scoreboard />
       <Scoreboard2 />
       <DisappearingInput />
+      <SwapTwoForm />
     </div>
   )
 }
