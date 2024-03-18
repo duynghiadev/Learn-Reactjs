@@ -2,6 +2,8 @@ import FilterableList from '@/198. Filter List/FilterListList'
 import Preserving from '@/199. Preserving State/component01/Preverving'
 import ShowCounterPreserving from '@/199. Preserving State/component02/ShowCounterPreserving'
 import ShowCounterPreserving2 from '@/199. Preserving State/component03/ShowCounterPreserving2'
+import Scoreboard from '@/200. Resetting State/component01/ScoreBoard'
+import Scoreboard2 from '@/200. Resetting State/component02/ScoreBoard2'
 import { useState } from 'react'
 import './App.css'
 
@@ -40,6 +42,8 @@ const App = () => {
       <Preserving />
       <ShowCounterPreserving />
       <ShowCounterPreserving2 />
+      <Scoreboard />
+      <Scoreboard2 />
     </div>
   )
 }
