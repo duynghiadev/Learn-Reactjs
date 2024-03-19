@@ -1,0 +1,32 @@
+.stopwatch-container {
+  text-align: center;
+}
+
+.time-passed {
+  margin-bottom: 20px;
+}
+
+.start-button,
+.stop-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.stop-button {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.start-button:hover,
+.stop-button:hover {
+  opacity: 0.8;
+}
