@@ -16,6 +16,7 @@ import CatFriends from '@/204. Use Ref Hook/Scrolling Images/CatFriends'
 import StopWatch from '@/204. Use Ref Hook/Stop Watch/StopWatch'
 import Chat from '@/206. Fix Broken Input/Fix Broken Chat Input/Chat'
 import Toggle from '@/206. Fix Broken Input/Fix Component/Toggle'
+import Dashboard from '@/206. Fix Broken Input/Fix Debouncing/Dashboard'
 import { useState } from 'react'
 import './App.css'
 
@@ -68,6 +69,7 @@ const App = () => {
       <VideoPlayer />
       <Chat />
       <Toggle />
+      <Dashboard />
     </div>
   )
 }
