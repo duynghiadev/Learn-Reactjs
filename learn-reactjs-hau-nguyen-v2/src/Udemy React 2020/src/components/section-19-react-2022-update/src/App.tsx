@@ -18,6 +18,8 @@ import Chat from '@/206. Fix Broken Input/Fix Broken Chat Input/Chat'
 import Toggle from '@/206. Fix Broken Input/Fix Component/Toggle'
 import Dashboard from '@/206. Fix Broken Input/Fix Debouncing/Dashboard'
 import ReadState from '@/206. Fix Broken Input/Read The Latest State/ReadState'
+import FormRef from '@/210. Manipulate DOM element via ref/Example01/FormRef'
+import CatFriendsRef from '@/210. Manipulate DOM element via ref/Example02/CatFriendsRef'
 import { useState } from 'react'
 import './App.css'
 
@@ -72,6 +74,8 @@ const App = () => {
       <Toggle />
       <Dashboard />
       <ReadState />
+      <FormRef />
+      <CatFriendsRef />
     </div>
   )
 }
