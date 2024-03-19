@@ -6,6 +6,8 @@ import Scoreboard from '@/200. Resetting State/component01/ScoreBoard'
 import Scoreboard2 from '@/200. Resetting State/component02/ScoreBoard2'
 import { DisappearingInput } from '@/201. Disappearing Input Text/DisappearingInput'
 import SwapTwoForm from '@/202. Swap Two Form/SwapTwoForm'
+import Gallery from '@/203. Reset Form/Clear Image While Loading/Gallery'
+import ContactManager from '@/203. Reset Form/Reset A Detail Form/ContactManager'
 import { useState } from 'react'
 import './App.css'
 
@@ -48,6 +50,8 @@ const App = () => {
       <Scoreboard2 />
       <DisappearingInput />
       <SwapTwoForm />
+      <ContactManager />
+      <Gallery />
     </div>
   )
 }
