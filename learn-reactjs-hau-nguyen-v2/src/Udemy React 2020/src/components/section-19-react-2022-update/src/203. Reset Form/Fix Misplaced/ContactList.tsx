@@ -43,7 +43,8 @@ const ContactList: React.FC = () => {
 const contacts: Contact[] = [
   { id: 0, name: 'Alice', email: 'alice@mail.com' },
   { id: 1, name: 'Bob', email: 'bob@mail.com' },
-  { id: 2, name: 'Taylor', email: 'taylor@mail.com' }
+  { id: 2, name: 'Taylor', email: 'taylor@mail.com' },
+  { id: 3, name: 'Ronaldo', email: 'ronaldo@mail.com' }
 ]
 
 export default ContactList
