@@ -21,6 +21,7 @@ import ReadState from '@/206. Fix Broken Input/Read The Latest State/ReadState'
 import FormRef from '@/210. Manipulate DOM element via ref/Example01/FormRef'
 import CatFriendsRefRefactor from '@/210. Manipulate DOM element via ref/Example02-Refactor Code/CatFriendsRef'
 import CatFriendsRef from '@/210. Manipulate DOM element via ref/Example02/CatFriendsRef'
+import Page from '@/210. Manipulate DOM element via ref/Try out some challenges/Focus the search field/Page'
 import VideoPlayerRef from '@/210. Manipulate DOM element via ref/Try out some challenges/Play and pause the video/VideoPlayerRef'
 import { useState } from 'react'
 import './App.css'
@@ -80,6 +81,7 @@ const App = () => {
       <CatFriendsRef />
       <CatFriendsRefRefactor />
       <VideoPlayerRef />
+      <Page />
     </div>
   )
 }
