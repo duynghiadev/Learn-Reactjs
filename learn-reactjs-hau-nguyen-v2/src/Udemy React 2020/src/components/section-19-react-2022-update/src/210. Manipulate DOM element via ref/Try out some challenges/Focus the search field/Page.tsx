@@ -14,6 +14,7 @@ const Page: React.FC = () => {
     <div className='page-container'>
       <hr className='separator' />
 
+      <p style={{ textAlign: 'center' }}>Focus and pause the video</p>
       <nav>
         <button className='search-button' onClick={handleSearchClick}>
           Search
