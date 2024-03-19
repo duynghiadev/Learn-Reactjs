@@ -11,6 +11,7 @@ import ContactList from '@/203. Reset Form/Fix Misplaced/ContactList'
 import ContactManager from '@/203. Reset Form/Reset A Detail Form/ContactManager'
 import ClickCounter from '@/204. Use Ref Hook/Click Counter/ClickCounter'
 import Form from '@/204. Use Ref Hook/Focus Text Input/Form'
+import VideoPlayer from '@/204. Use Ref Hook/Play And Pause Video/VideoPlayer'
 import CatFriends from '@/204. Use Ref Hook/Scrolling Images/CatFriends'
 import StopWatch from '@/204. Use Ref Hook/Stop Watch/StopWatch'
 import { useState } from 'react'
@@ -62,6 +63,7 @@ const App = () => {
       <StopWatch />
       <Form />
       <CatFriends />
+      <VideoPlayer />
     </div>
   )
 }
