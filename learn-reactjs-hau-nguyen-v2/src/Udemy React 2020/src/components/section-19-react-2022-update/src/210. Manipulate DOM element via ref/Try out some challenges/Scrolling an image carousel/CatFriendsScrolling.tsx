@@ -43,9 +43,11 @@ const CatFriendsScrolling: React.FC = () => {
       <hr className='separator' />
 
       <p style={{ textAlign: 'center' }}>This is Scrolling an image carousel </p>
+
       <nav>
         <button onClick={handleNextClick}>Next</button>
       </nav>
+
       <div className='carousel' ref={carouselRef}>
         <ul className='cat-list'>
           {catList.map((cat, i) => (
