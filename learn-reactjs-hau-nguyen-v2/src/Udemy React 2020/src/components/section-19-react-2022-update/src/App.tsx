@@ -23,6 +23,7 @@ import CatFriendsRefRefactor from '@/210. Manipulate DOM element via ref/Example
 import CatFriendsRef from '@/210. Manipulate DOM element via ref/Example02/CatFriendsRef'
 import Page from '@/210. Manipulate DOM element via ref/Try out some challenges/Focus the search field/Page'
 import VideoPlayerRef from '@/210. Manipulate DOM element via ref/Try out some challenges/Play and pause the video/VideoPlayerRef'
+import CatFriendsScrolling from '@/210. Manipulate DOM element via ref/Try out some challenges/Scrolling an image carousel/CatFriendsScrolling'
 import { useState } from 'react'
 import './App.css'
 
@@ -82,6 +83,7 @@ const App = () => {
       <CatFriendsRefRefactor />
       <VideoPlayerRef />
       <Page />
+      <CatFriendsScrolling />
     </div>
   )
 }
