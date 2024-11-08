@@ -5,6 +5,15 @@
 
 ---
 
+config git local
+
+```bash
+git config --local user.email "duynghia22302@gmail.com"
+git config --local user.name "duynghiadev"
+```
+
+---
+
 # ReactJS Project
 
 ## Folder structure
