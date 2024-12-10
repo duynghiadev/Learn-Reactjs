@@ -1,6 +1,6 @@
 # Mini Project: Photo App
 
-[Học Redux cơ bản 2020](https://tinyurl.com/2zpob73a)
+[Học Redux cơ bản 2020](https://www.youtube.com/playlist?list=PLeS7aZkL6GOvCz3GiOtvtDXChJRuebb7S)
 
 [Deploy on Surge](https://duynghiadev-photo-app.surge.sh/photos)
 
